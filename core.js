@@ -1,11 +1,11 @@
 "use strict";
 var data={
-    "available":["arare_salute.jpg","arare_first.jpg"],
-    "character":{
-        "arare":["arare_salute.jpg"]
+    available:["arare_salute.jpg","arare_first.jpg"],
+    character:{
+        arare:["arare_salute.jpg"]
     },
-    "episode":{
-        "1":["arare_salute.jpg"]
+    episode:{
+        1:["arare_salute.jpg"]
     }
 };
 function init(){
