@@ -1,4 +1,5 @@
 .vscode/*
 test.py
 img/*.txt
+img/*.torrent
 data.json
