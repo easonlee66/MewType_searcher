@@ -21,7 +21,7 @@ const data={
 function init(){
     const show=document.getElementById("show_image");
     var result_string="";
-    for(i in data.available){
+    for(let i of data.available){
         result_string+=("<img src=\"img/"+i+"\"/>");
     }
     show.innerHTML=result_string;
@@ -109,7 +109,7 @@ function process(){
             c_a[i]=true;
         }
     }
-    for(i in data.available){
+    for(let i of data.available){
         if(e_a[i] && c_a[i]){
             result_string+=("<img src=\"img/"+i+"\"/>");
         }
