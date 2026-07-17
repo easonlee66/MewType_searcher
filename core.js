@@ -1,21 +1,22 @@
 "use strict";
+//mv_laozili.jpg not register
 const data={
-    available:["arare_salute.jpg","arare_first.jpg"],
+    available:["arare_salute.jpg","arare_first.jpg","arare_darenotosee.png","arare_exciting.png","arare_finallysee.png","arare_happy.png","arare_lifemess.jpg","arare_play.png","arare_shock.png","arare_sostrong.png","arare_surprise.png","arare_sweat.png","buzhong.jpg","die.jpg","nonoka_arare.png","nonoka_letmesee.png","ritsu_afraid.png","ritsu_ghostback.png","ritsu_konomite.png","ritsu_shock.png","ritsu_viola.png","vio_happy.png","viola_badsmile.png","viola_blackface.png","viola_blackface_2.png","viola_blackface_3.png","viola_speak1.png","yuno_die.jpg"],
     character:{
-        arare:["arare_salute.jpg","arare_first.jpg"],
-        nonoka:[],
-        ritsu:[],
-        miyako:[],
-        yuno:[],
-        other:[]
+        arare:["arare_salute.jpg","arare_first.jpg","arare_darenotosee.png","arare_exciting.png","arare_finallysee.png","arare_happy.png","arare_lifemess.jpg","arare_play.png","arare_shock.png","arare_sostrong.png","arare_surprise.png","arare_sweat.png","buzhong.jpg","nonoka_arare.png"],
+        nonoka:["nonoka_arare.png","nonoka_letmesee.png"],
+        ritsu:["ritsu_afraid.png","ritsu_ghostback.png","ritsu_konomite.png","ritsu_shock.png","ritsu_viola.png"],
+        miyako:["die.jpg"],
+        yuno:["yuno_die.jpg"],
+        other:["ritsu_ghostback.png","ritsu_konomite.png","ritsu_viola.png","vio_happy.png","viola_badsmile.png","viola_blackface.png","viola_blackface_2.png","viola_blackface_3.png","viola_speak1.png"]
     },
     episode:{
-        a:["arare_salute.jpg","arare_first.jpg"],
+        a:["arare_salute.jpg","arare_first.jpg","arare_lifemess.jpg"],
         b:[],
-        c:[],
-        d:[],
+        c:["die.jpg","yuno_die.jpg"],
+        d:["arare_darenotosee.png","arare_exciting.png","arare_finallysee.png","arare_happy.png","arare_play.png","arare_shock.png","arare_surprise.png","arare_sweat.png","nonoka_arare.png","ritsu_afraid.png","ritsu_ghostback.png","ritsu_konomite.png","ritsu_shock.png","ritsu_viola.png","vio_happy.png","viola_badsmile.png","viola_blackface.png","viola_blackface_2.png","viola_blackface_3.png","viola_speak1.png"],
         e:[],
-        other:[]
+        other:["buzhong.jpg","die.jpg","nonoka_letmesee.png","yuno_die.jpg"]
     }
 };
 function init(){
