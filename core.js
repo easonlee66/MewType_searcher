@@ -75,43 +75,51 @@ function process(){
     else{
         alert("e error input");
     }
+    var has_check=false;
     if(document.getElementById("arare").checked){
+        has_check=true;
         for(let i of data.character.arare){
             c_a[i]=true;
         }
     }
     if(document.getElementById("nonoka").checked){
+        has_check=true;
         for(let i of data.character.nonoka){
             c_a[i]=true;
         }
     }
     if(document.getElementById("ritsu").checked){
+        has_check=true;
         for(let i of data.character.ritsu){
             c_a[i]=true;
         }
     }
     if(document.getElementById("miyako").checked){
+        has_check=true;
         for(let i of data.character.miyako){
             c_a[i]=true;
         }
     }
     if(document.getElementById("yuno").checked){
+        has_check=true;
         for(let i of data.character.yuno){
             c_a[i]=true;
         }
     }
 //    if(document.getElementById("viola").checked){
+//        has_check=true;
 //        for(let i of data.character.viola){
 //            c_a[i]=true;
 //        }
 //    }
     if(document.getElementById("other_c").checked){
+        has_check=true;
         for(let i of data.character.other){
             c_a[i]=true;
         }
     }
     for(let i of data.available){
-        if(e_a[i] && c_a[i]){
+        if(e_a[i] && (c_a[i] || !has_check)){
             result_string+=("<img src=\"img/"+i+"\"/>");
         }
     }
