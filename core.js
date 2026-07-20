@@ -49,6 +49,10 @@ const data={
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
+function change_checkbox(target_id){
+    const target=document.getElementById(target_id);
+    target.selected=!target.selected;
+}
 function init(){
     const show=document.getElementById("show_image");
     var result_string="";
