@@ -14,7 +14,6 @@ const data={
         arare_sostrong:["这么强",320,180,"png"],
         arare_surprise:["阿拉蕾震惊",231,180,"png"],
         arare_sweat:["阿拉蕾看手机",197,180,"png"],
-        buzhong:["不仲蕾",180,180,"jpg"],
         die:["大家都要死掉了",320,180,"jpg"],
         nonoka_arare:["野乃花阿拉蕾高兴",320,180,"png"],
         nonoka_letmesee:["野乃花突脸",214,180,"png"],
@@ -30,7 +29,8 @@ const data={
         viola_blackface_3:["薇欧拉坏笑",320,180,"png"],
         viola_speak1:["薇欧拉",320,180,"png"],//TODO complete desc
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
-        zhong:["仲蕾",179,180,"jpg"]
+        zhong:["仲蕾",179,180,"jpg"],
+        buzhong:["不仲蕾",180,180,"jpg"]
     },
     character:{
         arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong"],
