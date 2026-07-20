@@ -10,39 +10,41 @@
     <body onload="init()">
         <div><h1>梦限大MewType表情搜寻器</h1></div>
         <div>
-            <!--<button onclick="showSearch()">搜索</button>
-            <button onclick="showChoose()">筛选</button>-->
-            <p>筛选</p>
-        </div>
-        <div>
-            <label for="episode">出处</label>
-            <select id="episode" name="episode">
-                <option value="all" id="e_all" selected="">任意</option>
-                <option value="1" id="e_1">第一集</option>
-                <option value="2" id="e_2">第二集</option>
-                <option value="3" id="e_3">第三集</option>
-                <option value="4" id="e_4">第四集</option>
-                <option value="5" id="e_5">第五集</option>
-                <option value="other_e" id="e_other">其他</option>
-            </select>
-            <br/>
-            <label for="arare">角色（包含任意）</label>
-            <input type="checkbox" id="arare" name="character" value="arare"/>
-            <label for="arare">仲町阿拉蕾</label>
-            <input type="checkbox" id="nonoka" name="character" value="nonoka"/>
-            <label for="nonoka">宫永野乃花</label>
-            <input type="checkbox" id="ritsu" name="character" value="ritsu"/>
-            <label for="ritsu">峰月律</label>
-            <input type="checkbox" id="miyako" name="character" value="miyako"/>
-            <label for="miyako">藤都子</label>
-            <input type="checkbox" id="yuno" name="character" value="yuno"/>
-            <label for="yuno">千石由乃</label>
-            <!--<input type="checkbox" id="viola" name="character" value="viola"/>
-            <label for="viola">薇欧拉</label>-->
-            <input type="checkbox" id="other_c" name="character" value="other_c"/>
-            <label for="other_c">其他</label>
-            <br/>
-            <button id="submit" onclick="process()">筛选</button>
+            <div>
+                <!--<button onclick="showSearch()">搜索</button>
+                <button onclick="showChoose()">筛选</button>-->
+                <p>筛选</p>
+            </div>
+            <div>
+                <label for="episode">出处</label>
+                <select id="episode" name="episode">
+                    <option value="all" id="e_all" selected="">任意</option>
+                    <option value="1" id="e_1">第一集</option>
+                    <option value="2" id="e_2">第二集</option>
+                    <option value="3" id="e_3">第三集</option>
+                    <option value="4" id="e_4">第四集</option>
+                    <option value="5" id="e_5">第五集</option>
+                    <option value="other_e" id="e_other">其他</option>
+                </select>
+                <br/>
+                <label for="arare">角色（包含任意）</label>
+                <input type="checkbox" id="arare" name="character" value="arare"/>
+                <label for="arare">仲町阿拉蕾</label>
+                <input type="checkbox" id="nonoka" name="character" value="nonoka"/>
+                <label for="nonoka">宫永野乃花</label>
+                <input type="checkbox" id="ritsu" name="character" value="ritsu"/>
+                <label for="ritsu">峰月律</label>
+                <input type="checkbox" id="miyako" name="character" value="miyako"/>
+                <label for="miyako">藤都子</label>
+                <input type="checkbox" id="yuno" name="character" value="yuno"/>
+                <label for="yuno">千石由乃</label>
+                <!--<input type="checkbox" id="viola" name="character" value="viola"/>
+                <label for="viola">薇欧拉</label>-->
+                <input type="checkbox" id="other_c" name="character" value="other_c"/>
+                <label for="other_c">其他</label>
+                <br/>
+                <button id="submit" onclick="process()">筛选</button>
+            </div>
         </div>
         <!--<p id="result"></p>-->
         <div id="show_image">
