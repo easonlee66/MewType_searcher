@@ -6,6 +6,41 @@
         <title>梦限大MewType表情搜寻器</title>
         <noscript>Javascript is required.</noscript>
         <script src="core.js"></script>
+        <style>
+            #core_choose{
+                /*background-color: rgb(182, 192, 196);*/
+                line-height: 170%;
+            }
+            #core_div{
+                font-size: 16px;
+            }
+            .block {
+                padding: 8px 16px;/*size of button*/
+                text-align: center;
+                display: inline-block;/*show the button in one line*/
+                font-size: 16px;
+                margin: 4px 2px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+                background-color: #F1EFE0; 
+                color: black; 
+                border: 3px solid #6BC9FD;
+                border-radius: 8px;
+            }
+            .block:hover {
+                background-color: #6BC9FD;
+                color: #F1EFE0;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                border-radius: 8px;
+            }
+            .pointer_text{
+                cursor: pointer;
+            }
+            img{
+                margin: 2px 4px;
+            }
+        </style>
     </head>
     <body onload="init()">
         <div id="header"><h1>梦限大MewType表情搜寻器</h1></div>
@@ -13,7 +48,7 @@
             <div id="choose_page">
                 <!--<button onclick="showSearch()">搜索</button>
                 <button onclick="showChoose()">筛选</button>-->
-                <p>筛选</p>
+                <p class="choose_page_button">筛选</p>
             </div>
             <div id="core_choose">
                 <label for="episode">出处</label>
@@ -29,21 +64,21 @@
                 <br/>
                 <label for="arare">角色（包含任意）</label>
                 <input type="checkbox" id="arare" name="character" value="arare"/>
-                <label for="arare">仲町阿拉蕾</label>
+                <label for="arare" onclick="change_checkbox('arare')" class="pointer_text">仲町阿拉蕾</label>
                 <input type="checkbox" id="nonoka" name="character" value="nonoka"/>
-                <label for="nonoka">宫永野乃花</label>
+                <label for="nonoka" onclick="change_checkbox('nonoka')" class="pointer_text">宫永野乃花</label>
                 <input type="checkbox" id="ritsu" name="character" value="ritsu"/>
-                <label for="ritsu">峰月律</label>
+                <label for="ritsu" onclick="change_checkbox('ritsu')" class="pointer_text">峰月律</label>
                 <input type="checkbox" id="miyako" name="character" value="miyako"/>
-                <label for="miyako">藤都子</label>
+                <label for="miyako" onclick="change_checkbox('miyako')" class="pointer_text">藤都子</label>
                 <input type="checkbox" id="yuno" name="character" value="yuno"/>
-                <label for="yuno">千石由乃</label>
+                <label for="yuno" onclick="change_checkbox('yuno')" class="pointer_text">千石由乃</label>
                 <!--<input type="checkbox" id="viola" name="character" value="viola"/>
-                <label for="viola">薇欧拉</label>-->
+                <label for="viola" onclick="change_checkbox('viola')" class="pointer_text">薇欧拉</label>-->
                 <input type="checkbox" id="other_c" name="character" value="other_c"/>
-                <label for="other_c">其他</label>
+                <label for="other_c" onclick="change_checkbox('other_c')" class="pointer_text">其他</label>
                 <br/>
-                <button id="submit" onclick="process()">筛选</button>
+                <button id="submit" onclick="process()" class="block">筛选</button>
             </div>
         </div>
         <!--<p id="result"></p>-->
