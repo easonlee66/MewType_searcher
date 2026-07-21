@@ -3,3 +3,4 @@ test.py
 img/*.txt
 img/*.torrent
 data.json
+jekyll_test/*
