@@ -27,6 +27,12 @@ const data={
         viola_blackface_2:["薇欧拉黑脸",320,180,"png"],
         viola_blackface_3:["薇欧拉坏笑",320,180,"png"],
         viola_speak1:["薇欧拉",320,180,"png"],//TODO complete desc
+        jikankire:["时间到",320,180,"jpg"],
+        miyako_ai:["人类败北，失业就在眼前？",320,180,"jpg"],
+        nonka_all_right:["嗯 小野乃王国一切安好",320,180,"jpg"],
+        ritsu_hito:["诶 是人",320,180,"jpg"],
+        ritsu:["律震惊",274,180,"jpg"],
+        viola:["薇欧拉",320,180,"jpg"],//TODO complete desc
         die:["大家都要死掉了",320,180,"jpg"],
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
         zhong:["仲蕾",179,180,"jpg"],
@@ -34,16 +40,16 @@ const data={
     },
     character:{
         arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong"],
-        nonoka:["nonoka_arare","nonoka_letmesee"],
-        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola"],
-        miyako:["die"],
-        yuno:["yuno_die"],
-        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1"]
+        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right"],
+        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu"],
+        miyako:["die","miyako_ai"],
+        yuno:["yuno_die","ritsu_hito","nonka_all_right"],
+        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
-        b:[],
-        c:["die","yuno_die"],
+        b:["nonka_all_right"],
+        c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1"],
         e:[],
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
