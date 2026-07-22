@@ -65,24 +65,24 @@ const data={
         arare9:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare_sound_only:["阿拉蕾sound only",320,180,"png"],
-        vio:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio:["薇欧拉盯",320,180,"png"],
         vio2:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio3:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio4:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio5:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio6:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio7:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio8:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio3:["薇欧拉仰头笑",320,180,"png"],
+        vio4:["薇欧拉坏笑",320,180,"png"],
+        vio5:["薇欧拉坏笑",320,180,"png"],
+        vio6:["薇欧拉摸律头",320,180,"png"],
+        vio7:["薇欧拉摸律头",320,180,"png"],
+        vio8:["薇欧拉伸手",320,180,"png"],
         vio9:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio10:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio11:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio10:["薇欧拉呲牙笑",320,180,"png"],
+        vio11:["薇欧拉看手机笑",320,180,"png"],
         vio12:["薇欧拉",320,180,"png"],//TODO complete desc
         vio13:["薇欧拉",320,180,"png"],//TODO complete desc
         vio14:["薇欧拉",320,180,"png"],//TODO complete desc
         vio15:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio16:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio17:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio18:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio16:["薇欧拉震惊",320,180,"png"],
+        vio17:["薇欧拉黑脸笑",320,180,"png"],
+        vio18:["薇欧拉招手",320,180,"png"],
         vio19:["薇欧拉",320,180,"png"],//TODO complete desc
         bell_popo:["贝尔兴奋",320,180,"png"],
         bell:["贝尔哭",159,180,"png"],
