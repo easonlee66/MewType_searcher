@@ -45,27 +45,45 @@ const data={
         arare_egg:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare_egg2:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare_egg3:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_egg4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg4:["阿拉蕾唱歌",320,180,"png"],
         arare_egg5:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_nod:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_run:["阿拉蕾带律逃跑",320,180,"png"],
+        arare_shock2:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_shock3:["阿拉蕾被野乃花吓到",320,180,"png"],
+        arare_shock4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_shock5:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare:["阿拉蕾歪头笑",320,180,"png"],
+        arare1:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare2:["阿拉蕾被撞倒",320,180,"png"],
+        arare3:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare5:["阿拉蕾叹气",320,180,"png"],
+        arare6:["阿拉蕾注意到",320,180,"png"],
+        arare7:["阿拉蕾震惊",320,180,"png"],
+        arare8:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare9:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_sound_only:["阿拉蕾sound only",320,180,"png"],
         die:["大家都要死掉了",320,180,"jpg"],
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
         zhong:["仲蕾",179,180,"jpg"],
         buzhong:["不仲蕾",180,180,"jpg"]
     },
     character:{
-        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5"],
-        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize"],
-        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5"],
+        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","arare1","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10"],
+        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize","arare_shock3"],
+        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run"],
         miyako:["die","miyako_ai"],
         yuno:["yuno_die","ritsu_hito","nonka_all_right"],
-        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","arare_come_home"]
+        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","arare_come_home","arare_run","arare_shock4","arare_shock5"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
         b:["nonka_all_right"],
         c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1"],
-        e:["arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5"],
+        e:["arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","arare1","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare8","arare10"],
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
