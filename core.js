@@ -64,9 +64,29 @@ const data={
         arare8:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare9:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_sound_only:["阿拉蕾sound only",320,180,"png"],
+        vio:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio2:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio3:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio4:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio5:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio6:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio7:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio8:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio9:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio10:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio11:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio12:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio13:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio14:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio15:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio16:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio17:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio18:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio19:["薇欧拉",320,180,"png"],//TODO complete desc
         bell_popo:["贝尔兴奋",320,180,"png"],
         bell:["贝尔哭",159,180,"png"],
-        arare_sound_only:["阿拉蕾sound only",320,180,"png"],
+        manager_thinking:["经纪人思考",320,180,"png"],
         die:["大家都要死掉了",320,180,"jpg"],
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
         zhong:["仲蕾",179,180,"jpg"],
@@ -75,17 +95,17 @@ const data={
     character:{
         arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","arare1","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10"],
         nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize","arare_shock3"],
-        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run"],
+        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio18","vio19"],
         miyako:["die","miyako_ai"],
         yuno:["yuno_die","ritsu_hito","nonka_all_right"],
-        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo"]
+        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
         b:["nonka_all_right"],
         c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1"],
-        e:["arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","arare1","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare8","arare10","bell","bell_popo"],
+        e:["arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","arare1","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare8","arare10","bell","bell_popo","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19"],
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
