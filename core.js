@@ -33,25 +33,39 @@ const data={
         ritsu_hito:["诶 是人",320,180,"jpg"],
         ritsu:["律震惊",274,180,"jpg"],
         viola:["薇欧拉",320,180,"jpg"],//TODO complete desc
+        arare_2:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_3:["阿拉蕾挠头",320,180,"png"],
+        arare_4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_5:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_6:["阿拉蕾抱头",320,180,"png"],
+        arare_apologize:["阿拉蕾道歉",320,180,"png"],
+        arare_come_home:["阿拉蕾回家",320,180,"png"],
+        arare_cry:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_depress:["阿拉蕾失落",320,180,"png"],
+        arare_egg:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg2:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg3:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg5:["阿拉蕾",320,180,"png"],//TODO complete desc
         die:["大家都要死掉了",320,180,"jpg"],
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
         zhong:["仲蕾",179,180,"jpg"],
         buzhong:["不仲蕾",180,180,"jpg"]
     },
     character:{
-        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong"],
-        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right"],
-        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu"],
+        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5"],
+        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize"],
+        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5"],
         miyako:["die","miyako_ai"],
         yuno:["yuno_die","ritsu_hito","nonka_all_right"],
-        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire"]
+        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","arare_come_home"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
         b:["nonka_all_right"],
         c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1"],
-        e:[],
+        e:["arare_2","arare_3","arare_4","arare_5","arare_6","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5"],
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
