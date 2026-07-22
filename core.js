@@ -126,7 +126,8 @@ const data={
         ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","ritsu_determine"],
         miyako:["die","miyako_ai","miyako_apologize","miyako_ditou"],
         yuno:["yuno_die","ritsu_hito","nonka_all_right","yuno_2","yuno","yuno1","yuno2","yuno3","yuno4"],
-        other:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","vio_cry","viola_2","viola_happy","viola2","arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo"]
+        viola:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","vio","vio2","vio3","vio4","vio5","vio6","vio7","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","vio_cry","viola_2","viola_happy","viola2","arare_run"],
+        other:["arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo","arare9"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
@@ -228,12 +229,12 @@ function process(){
             c_a[i]=true;
         }
     }
-//    if(document.getElementById("viola").checked){
-//        has_check=true;
-//        for(let i of data.character.viola){
-//            c_a[i]=true;
-//        }
-//    }
+    if(document.getElementById("viola").checked){
+        has_check=true;
+        for(let i of data.character.viola){
+            c_a[i]=true;
+        }
+    }
     if(document.getElementById("other_c").checked){
         has_check=true;
         for(let i of data.character.other){
