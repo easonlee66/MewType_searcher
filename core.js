@@ -118,8 +118,8 @@ const data={
         yuno1:["由乃看屏幕",320,180,"png"],
         yuno3:["由乃",320,180,"png"],//TODO complete desc
         yuno4:["由乃",320,180,"png"],//TODO complete desc
-        bell_popo:["贝尔兴奋",320,180,"png"],
-        bell:["贝尔哭",159,180,"png"],
+        bell_popo:["蓓儿兴奋",320,180,"png"],
+        bell:["蓓儿哭",159,180,"png"],
         manager_thinking:["经纪人思考",320,180,"png"],
         mewtype_hai:["是",320,180,"jpg"],
         die:["大家都要死掉了",320,180,"jpg"],
