@@ -196,7 +196,7 @@ const data={
         b:["nonka_all_right","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","manager_badnews","myk_blackface","myk_draw","myk_draw2","myk_draw3","myk_draw4","myk_draw5","myk_draw6","nnk_head","nnk_smile","nnk_smile2","nnk1","nnk","nnk2","myk_maru","myk_maru2","myk_shy","myk_sleep","myk","myk2","myk1"],
         c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","arare_7","arare_8","arare_desune","arare_impossible","arare_must","maru_kitai","mewtype_hai","arare_sostrong"],
-        e:["arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","bell","bell_popo","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","miyako_apologize","miyako_ditou","nonoka_2","nonoka_3","nonoka_determine","nonoka_smile","nonoka","kanngaero","vio_cry","viola_2","viola_happy","kikoenai","yuno5","yuno","yuno1","yuno2","yuno3","yuno4","arigadou","dajiobu","dame","dekirenai","demo","doshiyo","en","gomenn","manager_thinking","manager","nnk3","mojiro","nani","nanimoshiranai","shide","sona","sonada","kowai","wakaranai","yabai"],
+        e:["arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","bell","bell_popo","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","miyako_apologize","miyako_ditou","nonoka_2","nonoka_3","nonoka_determine","nonoka_smile","nonoka","kanngaero","vio_cry","viola_2","viola_happy","kikoenai","yuno5","yuno","yuno1","yuno2","yuno3","yuno4","arigadou","dajiobu","dame","dekirenai","demo","doshiyo","en","gomenn","manager_thinking","manager","nnk3","mojiro","nani","nanimoshiranai","shide","sona","sonada","wakaranai","kowai","yabai"],
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
@@ -372,7 +372,7 @@ function selfcheck(){
             result_string+=" ";
         }
     }
-    result_string+="\nclick to clear this information"
+    result_string+="<br/>click to clear this information"
     show.innerHTML=result_string;
 }
 //function showSearch(){}
