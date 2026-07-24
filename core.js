@@ -78,38 +78,30 @@ const data={
         viola_badsmile:["薇欧拉坏笑",320,180,"png"],
         ritsu_afraid:["律",320,180,"png"],//TODO complete desc
         viola_blackface_3:["薇欧拉坏笑",320,180,"png"],
+        arare_depress:["阿拉蕾失落",320,180,"png"],
+        arare_sound_only:["阿拉蕾sound only",320,180,"png"],
+        miyako_ditou:["都子低头",320,180,"png"],
+        manager_thinking:["经纪人思考",320,180,"png"],
+        miyako_apologize:["都子道歉",320,180,"png"],
+        arare:["阿拉蕾歪头笑",320,180,"png"],
+        arare_come_home:["阿拉蕾回家",320,180,"png"],
+        arare2:["阿拉蕾被撞倒",320,180,"png"],
+        nonoka:["野乃花",320,180,"png"],//TODO complete desc
+        nonoka_smile:["野乃花笑",320,180,"png"],
+        nonoka_determine:["野乃花",320,180,"png"],//TODO complete desc
         arare_2:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare_3:["阿拉蕾挠头",320,180,"png"],
         arare_4:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_5:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_6:["阿拉蕾抱头",320,180,"png"],
         arare_apologize:["阿拉蕾道歉",320,180,"png"],
-        arare_come_home:["阿拉蕾回家",320,180,"png"],
-        arare_cry:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_depress:["阿拉蕾失落",320,180,"png"],
-        arare_egg:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_egg2:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_egg3:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_egg4:["阿拉蕾唱歌",320,180,"png"],
-        arare_egg5:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_nod:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_run:["阿拉蕾带律逃跑",320,180,"png"],
         arare_shock2:["阿拉蕾",320,180,"png"],//TODO complete desc
+        nonoka_2:["野乃花",320,180,"png"],//TODO complete desc
         arare_shock3:["阿拉蕾被野乃花吓到",320,180,"png"],
+        nonoka_3:["野乃花",320,180,"png"],//TODO complete desc
         arare_shock4:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare_shock5:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare:["阿拉蕾歪头笑",320,180,"png"],
-        arare1:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare2:["阿拉蕾被撞倒",320,180,"png"],
-        arare3:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare4:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare5:["阿拉蕾叹气",320,180,"png"],
-        arare6:["阿拉蕾注意到",320,180,"png"],
-        arare7:["阿拉蕾震惊",320,180,"png"],
-        arare8:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare9:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_sound_only:["阿拉蕾sound only",320,180,"png"],
+        viola_2:["薇欧拉",320,180,"png"],//TODO complete desc
+        viola_happy:["薇欧拉",320,180,"png"],//TODO complete desc
+        viola2:["薇欧拉",320,180,"png"],//TODO complete desc
         vio:["薇欧拉盯",320,180,"png"],
         vio2:["薇欧拉",320,180,"png"],//TODO complete desc
         vio3:["薇欧拉仰头笑",320,180,"png"],
@@ -120,46 +112,54 @@ const data={
         vio8:["薇欧拉伸手",320,180,"png"],
         vio9:["薇欧拉",320,180,"png"],//TODO complete desc
         vio10:["薇欧拉呲牙笑",320,180,"png"],
-        vio11:["薇欧拉看手机笑",320,180,"png"],
-        vio12:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio13:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio14:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio15:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio16:["薇欧拉震惊",320,180,"png"],
-        vio17:["薇欧拉黑脸笑",320,180,"png"],
-        vio18:["薇欧拉招手",320,180,"png"],
-        vio19:["薇欧拉",320,180,"png"],//TODO complete desc
-        vio_cry:["薇欧拉装可怜",320,180,"png"],
-        viola_2:["薇欧拉",320,180,"png"],//TODO complete desc
-        viola_happy:["薇欧拉",320,180,"png"],//TODO complete desc
-        viola2:["薇欧拉",320,180,"png"],//TODO complete desc
         ritsu1:["律看屏幕",320,180,"png"],
         ritsu2:["律",320,180,"png"],//TODO complete desc
         ritsu3:["律",320,180,"png"],//TODO complete desc
-        ritsu4:["律震惊",320,180,"png"],
-        ritsu5:["律震惊",320,180,"png"],
-        ritsu6:["律",320,180,"png"],//TODO complete desc
-        ritsu7:["律瘫在椅子上",320,180,"png"],
-        ritsu8:["律",320,180,"png"],//TODO complete desc
-        ritsu9:["律",320,180,"png"],//TODO complete desc
-        ritsu10:["律无精打采",320,180,"png"],
-        ritsu11:["律",320,180,"png"],//TODO complete desc
-        ritsu_determine:["律坚定的眼神",320,180,"png"],
-        miyako_apologize:["都子道歉",320,180,"png"],
-        miyako_ditou:["都子低头",320,180,"png"],
-        nonoka_2:["野乃花",320,180,"png"],//TODO complete desc
-        nonoka_3:["野乃花",320,180,"png"],//TODO complete desc
-        nonoka_determine:["野乃花",320,180,"png"],//TODO complete desc
-        nonoka_smile:["野乃花笑",320,180,"png"],
-        nonoka:["野乃花",320,180,"png"],//TODO complete desc
+        vio11:["薇欧拉看手机笑",320,180,"png"],
         yuno_2:["由乃抱胸",320,180,"png"],
         yuno:["由乃看屏幕",320,180,"png"],
         yuno1:["由乃看屏幕",320,180,"png"],
         yuno3:["由乃",320,180,"png"],//TODO complete desc
         yuno4:["由乃",320,180,"png"],//TODO complete desc
         bell_popo:["蓓儿兴奋",320,180,"png"],
+        ritsu4:["律震惊",320,180,"png"],
+        ritsu5:["律震惊",320,180,"png"],
+        ritsu6:["律",320,180,"png"],//TODO complete desc
+        ritsu7:["律瘫在椅子上",320,180,"png"],
+        ritsu8:["律",320,180,"png"],//TODO complete desc
+        ritsu9:["律",320,180,"png"],//TODO complete desc
+        arare1:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare3:["阿拉蕾",320,180,"png"],//TODO complete desc
         bell:["蓓儿哭",159,180,"png"],
-        manager_thinking:["经纪人思考",320,180,"png"],
+        ritsu10:["律无精打采",320,180,"png"],
+        vio12:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio13:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio14:["薇欧拉",320,180,"png"],//TODO complete desc
+        vio15:["薇欧拉",320,180,"png"],//TODO complete desc
+        ritsu11:["律",320,180,"png"],//TODO complete desc
+        arare_egg2:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg3:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_egg4:["阿拉蕾唱歌",320,180,"png"],
+        arare_egg5:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare4:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare5:["阿拉蕾叹气",320,180,"png"],
+        arare6:["阿拉蕾注意到",320,180,"png"],
+        arare7:["阿拉蕾震惊",320,180,"png"],
+        arare8:["阿拉蕾",320,180,"png"],//TODO complete desc
+        vio16:["薇欧拉震惊",320,180,"png"],
+        vio17:["薇欧拉黑脸笑",320,180,"png"],
+        vio18:["薇欧拉招手",320,180,"png"],
+        arare9:["阿拉蕾",320,180,"png"],//TODO complete desc
+        vio19:["薇欧拉",320,180,"png"],//TODO complete desc
+        arare_egg:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_run:["阿拉蕾带律逃跑",320,180,"png"],
+        vio_cry:["薇欧拉装可怜",320,180,"png"],
+        arare_5:["阿拉蕾",320,180,"png"],//TODO complete desc
+        arare_6:["阿拉蕾抱头",320,180,"png"],
+        arare_cry:["阿拉蕾",320,180,"png"],//TODO complete desc
+        ritsu_determine:["律坚定的眼神",320,180,"png"],
+        arare_nod:["阿拉蕾",320,180,"png"],//TODO complete desc
         zhong:["仲蕾",179,180,"jpg"],
         buzhong:["不仲蕾",180,180,"jpg"]
     },
