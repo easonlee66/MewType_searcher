@@ -372,6 +372,7 @@ function selfcheck(){
             result_string+=" ";
         }
     }
+    result_string+="\nclick to clear this information"
     show.innerHTML=result_string;
 }
 //function showSearch(){}
