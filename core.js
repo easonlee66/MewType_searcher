@@ -310,5 +310,69 @@ function process(){
     }
     show.innerHTML=result_string;
 }
+function selfcheck(){
+    const show=document.getElementById("result");
+    const c_a=new Object();
+    const e_a=new Object();
+    for(let i in data.available){
+        c_a[i]=false;
+        e_a[i]=false;
+    }
+    var result_string="";
+    for(let i of data.episode.a){
+        e_a[i]=true;
+    }
+    for(let i of data.episode.b){
+        e_a[i]=true;
+    }
+    for(let i of data.episode.c){
+        e_a[i]=true;
+    }
+    for(let i of data.episode.d){
+        e_a[i]=true;
+    }
+    for(let i of data.episode.e){
+        e_a[i]=true;
+    }
+    for(let i of data.episode.other){
+        e_a[i]=true;
+    }
+    for(let i of data.character.arare){
+        c_a[i]=true;
+    }
+    for(let i of data.character.nonoka){
+        c_a[i]=true;
+    }
+    for(let i of data.character.ritsu){
+        c_a[i]=true;
+    }
+    for(let i of data.character.miyako){
+        c_a[i]=true;
+    }
+    for(let i of data.character.yuno){
+        c_a[i]=true;
+    }
+    for(let i of data.character.viola){
+        c_a[i]=true;
+    }
+    for(let i of data.character.other){
+        c_a[i]=true;
+    }
+    result_string+="debug:<br/>missing episode information:";
+    for(let i in e_a){
+        if(!e_a[i]){
+            result_string+=i;
+            result_string+=" ";
+        }
+    }
+    result_string+="<br/>missing character information:";
+    for(let i in c_a){
+        if(!c_a[i]){
+            result_string+=i;
+            result_string+=" ";
+        }
+    }
+    show.innerHTML=result_string;
+}
 //function showSearch(){}
 //function showChoose(){}
