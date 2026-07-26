@@ -1,6 +1,6 @@
 "use strict";
 //mv_laozili.jpg not register
-//delete arare_6.png ritsu_determine.png viola2.png arare1.png arare3.png vio7.png yuno_2.png
+//delete arare_6.png ritsu_determine.png viola2.png arare1.png arare3.png vio7.png yuno_2.png myk_sleep
 const data={
     available:{
         die:["大家都要死掉了",320,180,"jpg"],
@@ -13,9 +13,12 @@ const data={
         arare_wake2:["阿拉蕾睡醒",320,180,"png"],
         arare_wake3:["阿拉蕾睡醒",320,180,"png"],
         arare_smile:["阿拉蕾笑",320,180,"png"],
+        arr0_kowai:["我很害怕",320,180,"jpg"],
         arare_majiruru:["阿拉蕾看魔法露露的海报",320,180,"png"],
         arare_cry2:["阿拉蕾哭",320,180,"png"],
+        nnk0_yeah:["耶",320,180,"jpg"],
         nnk:["野乃花笑",320,180,"png"],
+        nnk1_daijobu:["小野乃会治好她的 没问题",320,180,"jpg"],
         myk_draw:["都子画画",320,180,"png"],
         myk_draw2:["都子画画",320,180,"png"],
         myk_draw3:["都子画画",320,180,"png"],
@@ -27,25 +30,63 @@ const data={
         arare_shock6:["阿拉蕾被吓到",320,180,"png"],
         arr_logout:["LOG OUT",320,180,"png"],
         arr_afraid:["阿拉蕾抱头蹲",320,180,"png"],
+        o:["哦？",320,180,"jpg"],
         arr:["阿拉蕾立正",320,180,"png"],
         nnk_smile:["野乃花笑",320,180,"png"],
+        daijobu:["没事吧？",320,180,"jpg"],
         nonka_all_right:["嗯 小野乃王国一切安好",320,180,"jpg"],
+        nnk1_kangae:["别想太多",320,180,"jpg"],
         nnk_smile2:["野乃花笑",320,180,"png"],
+        nnk2_hai:["是",320,180,"jpg"],
         myk_maru2:["都子和丸君",320,180,"png"],
         myk_blackface:["都子黑脸",320,180,"png"],
+        myk0_otaku:["一看就是把阿宅随便敷衍过去的态度",320,180,"jpg"],
+        myk1_watashi:["我对这种事很敏感的一下就看出来了",320,180,"jpg"],
+        maru0:["闹得可真厉害啊",320,180,"jpg"],
         myk1:["都子下定决心",320,180,"png"],
+        maru1_ill:["发病了？",320,180,"jpg"],
+        myk2_tarinai:["治愈 治愈不够",320,180,"jpg"],
+        myk3_kawai:["可爱 只有可爱才能治愈我",320,180,"jpg"],
         myk:["都子探头",320,180,"png"],
-        myk_sleep:["都子睡着",320,180,"png"],
+        myk4_kitto:["我一定会做到的",320,180,"jpg"],
+        daijiobu:["欸 没事吧",320,180,"jpg"],
+        daijobu1:["我没事",320,180,"jpg"],
+        myk4_daijobu:["没问题，我能做到",320,180,"jpg"],
+        myk5_zuzukitai:["我能继续",320,180,"jpg"],
         nnk1:["野乃花猫猫嘴",320,180,"png"],
+        nnk3_hug:["抱抱 对半分",320,180,"jpg"],
+        arr1_kami:["就算有很多不开心的事\n也能被治愈 简直是神作",320,180,"jpg"],
+        nnk4_tabenai:["一起吃午饭吧",320,180,"jpg"],
         arr_stand:["阿拉蕾立正",320,180,"png"],
         arr_stand2:["阿拉蕾检查野乃花",320,180,"png"],
+        nnk5_hai:["对呀",320,180,"jpg"],
+        arr2_school:["我也能努力上学了",320,180,"jpg"],
         nnk_head:["野乃花头槌",320,180,"png"],
+        nnk6_totoketai:["小野乃的心意有传达到吗",320,180,"jpg"],
+        arr3_nai:["没有",320,180,"jpg"],
+        nnk7_yabari:["果然还是得好好说出来才行",320,180,"jpg"],
+        arr4_itai:["说得太直白啦",320,180,"jpg"],
         arr_face:["阿拉蕾摸脸",320,180,"png"],
+        nnk8_sukipower:["因为喜欢是有力量的",320,180,"jpg"],
         nnk2:["野乃花点子",320,180,"png"],
+        nnk8_hashai:["出发",320,180,"jpg"],
         myk2:["都子见阿拉蕾",320,180,"png"],
+        arr5_yishun:["一眼就被迷住了",320,180,"jpg"],
         arr_without_color:["黑白阿拉蕾",320,180,"png"],
+        arr6_yabai:["搞砸",320,180,"jpg"],
+        arr7_kaikou:["明明知道不该开口的",320,180,"jpg"],
+        ritsu0_huibi:["越是回避越容易碰到",320,180,"jpg"],
         myk_shy:["都子脸红",320,180,"png"],
+        yumewapower:["梦想即力量 梦想即力量 梦想即力量",320,180,"jpg"],
+        arr7_zipmouth:["拉链封嘴巴？",320,180,"jpg"],
+        myk6_arigadou:["昨天非常谢谢你",320,180,"jpg"],
         arare_surprise1:["阿拉蕾惊",320,180,"png"],
+        arr8_arigadou:["非常感谢",320,180,"jpg"],
+        nnk_yabari:["果然就是应该说出来",320,180,"jpg"],
+        arigadou1:["谢谢 不过别太过勉强哦",320,180,"jpg"],
+        myk7_shipainai:["无需担心",320,180,"jpg"],
+        kakoi:["好帅",320,180,"jpg"],
+        myk8_zenbu:["全部好烦",320,180,"jpg"],
         miyako_ai:["人类败北，失业就在眼前？",320,180,"jpg"],
         ritsu_hito:["诶 是人",320,180,"jpg"],
         ritsu:["律震惊",274,180,"jpg"],
@@ -183,17 +224,17 @@ const data={
         buzhong:["不仲蕾",180,180,"jpg"]
     },
     character:{
-        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","arare_7","arare_8","arare_desune","arare_impossible","arare_must","maru_kitai","mewtype_hai","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","nnk_head","dame","dekirenai","demo","doshiyo","gomenn","kowai","nani","sonada","wakaranai","yabai"],
-        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize","arare_shock3","nonoka_2","nonoka_3","nonoka_determine","nonoka_smile","nonoka","mewtype_hai","arare_surprise1","arr_afraid","arr_stand","arr_stand2","arr","nnk_head","nnk_smile","nnk_smile2","nnk1","nnk","nnk2","dajiobu","dame","nnk3","mojiro","nanimoshiranai","shide","sona"],
-        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","kanngaero","arigadou","en","gomenn","kowai","wakaranai"],
-        miyako:["die","miyako_ai","miyako_apologize","miyako_ditou","arare_7","mewtype_hai","myk_blackface","myk_draw","myk_draw2","myk_draw3","myk_draw4","myk_draw5","myk_draw6","myk_maru","myk_maru2","myk_shy","myk_sleep","myk","myk2","myk1","dame","nanimoshiranai","shide"],
-        yuno:["yuno_die","ritsu_hito","nonka_all_right","yuno5","yuno","yuno1","yuno2","yuno3","yuno4","arare_impossible","mewtype_hai","arr_afraid","nnk_smile","dajiobu","dame","mojiro","sona"],
+        arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","arare_7","arare_8","arare_desune","arare_impossible","arare_must","maru_kitai","mewtype_hai","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","nnk_head","dame","dekirenai","demo","doshiyo","gomenn","kowai","nani","sonada","wakaranai","yabai"/**/,"arigadou1","daijiobu","kakoi","yumewapower","arr0_kowai","arr1_kami","arr2_school","arr3_nai","arr4_itai","arr5_yishun","arr6_yabai","arr7_kaikou","arr7_zipmouth","arr8_arigadou","nnk7_yabari","myk6_arigadou","myk8_zenbu","nnk_yabari"],
+        nonoka:["nonoka_arare","nonoka_letmesee","nonka_all_right","arare_2","arare_3","arare_apologize","arare_shock3","nonoka_2","nonoka_3","nonoka_determine","nonoka_smile","nonoka","mewtype_hai","arare_surprise1","arr_afraid","arr_stand","arr_stand2","arr","nnk_head","nnk_smile","nnk_smile2","nnk1","nnk","nnk2","dajiobu","dame","nnk3","mojiro","nanimoshiranai","shide","sona"/**/,"arigadou1","daijobu","daijobu1","kakoi","o","myk0_otaku","myk1_watashi","arr7_zipmouth","nnk0_yeah","nnk1_daijobu","nnk1_kangae","nnk2_hai","nnk3_hug","nnk4_tabenai","nnk5_hai","nnk6_totoketai","nnk7_yabari","nnk8_hashai","nnk8_sukipower","arr4_itai","arr8_arigadou","myk6_arigadou","myk8_zenbu","nnk_yabari"],
+        ritsu:["ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","ritsu_hito","ritsu","arare_5","arare_run","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","kanngaero","arigadou","en","gomenn","kowai","wakaranai"/**/,"ritsu0_huibi"],
+        miyako:["die","miyako_ai","miyako_apologize","miyako_ditou","arare_7","mewtype_hai","myk_blackface","myk_draw","myk_draw2","myk_draw3","myk_draw4","myk_draw5","myk_draw6","myk_maru","myk_maru2","myk_shy","myk4_daijobu","myk","myk2","myk1","dame","nanimoshiranai","shide"/**/,"arigadou1","daijiobu","daijobu1","kakoi","o","maru0","maru1_ill","myk0_otaku","myk1_watashi","myk2_tarinai","myk3_kawai","myk4_kitto","myk5_zuzukitai","myk6_arigadou","myk7_shipainai","myk8_zenbu","arr_yishun","arr8_arigadou","nnk_yabari"],
+        yuno:["yuno_die","ritsu_hito","nonka_all_right","yuno5","yuno","yuno1","yuno2","yuno3","yuno4","arare_impossible","mewtype_hai","arr_afraid","nnk_smile","dajiobu","dame","mojiro","sona"/**/,"daijiobu","daijobu","o"],
         viola:["ritsu_ghostback","ritsu_konomite","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","viola","jikankire","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","vio_cry","viola_2","viola_happy","kikoenai","arare_run"],
-        other:["arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo","arare9","maru_kitai","arr_afraid","arare_shock6","manager_badnews","myk_draw4","myk_draw5","myk_maru","myk_maru2","myk1","nnk_smile2","dame","manager_thinking","manager","nani","sonada"]
+        other:["arare_run","arare_come_home","arare_shock4","arare_shock5","bell","bell_popo","arare9","maru_kitai","arr_afraid","arare_shock6","manager_badnews","myk_draw4","myk_draw5","myk_maru","myk_maru2","myk1","nnk_smile2","dame","manager_thinking","manager","nani","sonada",/**/"daijobu1","o","maru0","maru1_ill","myk4_kitto","nnk1_kangae"]
     },
     episode:{
         a:["arare_salute","arare_first","arare_lifemess"],
-        b:["nonka_all_right","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","manager_badnews","myk_blackface","myk_draw","myk_draw2","myk_draw3","myk_draw4","myk_draw5","myk_draw6","nnk_head","nnk_smile","nnk_smile2","nnk1","nnk","nnk2","myk_maru","myk_maru2","myk_shy","myk_sleep","myk","myk2","myk1"],
+        b:["nonka_all_right","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","manager_badnews","myk_blackface","myk_draw","myk_draw2","myk_draw3","myk_draw4","myk_draw5","myk_draw6","nnk_head","nnk_smile","nnk_smile2","nnk1","nnk","nnk2","myk_maru","myk_maru2","myk_shy","myk4_daijobu","myk","myk2","myk1","arr1_kami","arr2_school","arr3_nai","arr4_itai","arr5_yishun","arr6_yabai","arr7_kaikou","arr7_zipmouth","arr8_arigadou","nnk0_yeah","nnk1_daijobu","nnk1_kangae","nnk2_hai","nnk3_hug","nnk4_tabenai","nnk5_hai","nnk6_totoketai","nnk7_yabari","nnk8_hashai","nnk8_sukipower","myk0_otaku","myk1_watashi","myk2_tarinai","myk3_kawai","myk4_kitto","myk5_zuzukitai","myk6_arigadou","myk7_shipainai","myk8_zenbu","daijiobu","daijobu","o","nnk_yabari","arr0_kowai","ritsu0_huibi","maru0","maru1_ill","daijobu1","yumewapower","arigadou1","kakoi"],
         c:["die","yuno_die","ritsu","viola","jikankire","ritsu_hito","miyako_ai"],
         d:["arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_play","arare_shock","arare_surprise","arare_sweat","nonoka_arare","ritsu_afraid","ritsu_ghostback","ritsu_konomite","ritsu_shock","ritsu_viola","vio_happy","viola_badsmile","viola_blackface","viola_blackface_2","viola_blackface_3","viola_speak1","arare_7","arare_8","arare_desune","arare_impossible","arare_must","maru_kitai","mewtype_hai","arare_sostrong"],
         e:["arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","bell","bell_popo","vio","vio2","vio3","vio4","vio5","vio6","vio0","vio8","vio9","vio10","vio11","vio12","vio13","vio14","vio15","vio16","vio17","vio18","vio19","ritsu1","ritsu2","ritsu3","ritsu4","ritsu5","ritsu6","ritsu7","ritsu8","ritsu9","ritsu10","ritsu11","miyako_apologize","miyako_ditou","nonoka_2","nonoka_3","nonoka_determine","nonoka_smile","nonoka","kanngaero","vio_cry","viola_2","viola_happy","kikoenai","yuno5","yuno","yuno1","yuno2","yuno3","yuno4","arigadou","dajiobu","dame","dekirenai","demo","doshiyo","en","gomenn","manager_thinking","manager","nnk3","mojiro","nani","nanimoshiranai","shide","sona","sonada","wakaranai","kowai","yabai"],
@@ -361,8 +402,9 @@ function selfcheck(){
     result_string+="debug:<br/>missing episode information:";
     for(let i in e_a){
         if(!e_a[i]){
+            result_string+="\""
             result_string+=i;
-            result_string+=" ";
+            result_string+="\",";
         }
     }
     result_string+="<br/>missing character information:";
