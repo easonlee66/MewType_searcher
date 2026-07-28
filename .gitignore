@@ -2,6 +2,6 @@
 test.py
 img/*.txt
 img/*.torrent
-data.json
+olddata.json
 jekyll_test/*
 data.py
