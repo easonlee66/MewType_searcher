@@ -241,6 +241,24 @@ const data={
         other:["buzhong","die","nonoka_letmesee","yuno_die","zhong"]
     }
 };
+
+const newdata=eval("");
+const imglist=eval("");
+
+//new encoding:{name:["format","description",episode(num),["character"](,[width,height])]}
+
+function turn(){
+    const change_button=document.getElementById("change_on");
+    if(change_button.innerHTML=="to new"){
+        change_button.innerHTML="to old";
+        process_new();
+    }
+    else{
+        change_button.innerHTML="to new";
+        process();
+    }
+}
+
 function change_checkbox(target_id){
     const target=document.getElementById(target_id);
     target.selected=!target.selected;
@@ -349,6 +367,11 @@ function process(){
             result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\" width="+data.available[i][1]+" height="+data.available[i][2]+"/>");
         }
     }
+    show.innerHTML=result_string;
+}
+function process_new(){
+    const show=document.getElementById("show_image");
+    var result_string="";
     show.innerHTML=result_string;
 }
 function selfcheck(){
