@@ -251,16 +251,20 @@ const split=newdatas.split;
 
 function turn(){
     const change_button=document.getElementById("change_on");
+    const submit_button=document.getElementById('submit');
     if(change_button.innerHTML=="to new"){
         change_button.innerHTML="to old";
+        submit_button.onclick=process_new;
         process_new();
     }
     else{
         change_button.innerHTML="to new";
+        submit_button.onclick=process;
         process();
     }
 }
 function turn_mode(){
+    const change_button=document.getElementById("change_on");
     if(change_button.innerHTML=="to new"){
         alert("抱歉，旧版编码不支持切换“包含任意”与“包含全部”，敬请谅解");
     }
