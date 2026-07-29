@@ -242,7 +242,7 @@ const data={
     }
 };
 
-const newdatas=eval('{"data":{},"imglist":[],"split":{}}')
+const newdatas=JSON.parse('{"data": {"arare_first": ["jpg", "\u521d\u6b21\u89c1\u9762", ["arl"], 320, 180], "o": ["jpg", "\u54e6\uff1f", ["nnk", "yuno", "myk", "other"], 320, 180], "ritsu_hito": ["jpg", "\u6b38\uff0c\u662f\u4eba\uff1f", ["ritsu", "yuno"], 320, 180], "nonoka_arare": ["png", "\u91ce\u4e43\u82b1\u963f\u62c9\u857e\u9ad8\u5174", ["nnk", "arl"], 320, 180], "arare_run": ["png", "\u963f\u62c9\u857e\u5e26\u5f8b\u9003\u8dd1", ["arl", "ritsu", "viola", "other"], 320, 180]}, "imglist": [["arare_first", 1, 0, 58], ["o", 2, 8, 9], ["ritsu_hito", 3, 11, 22], ["nonoka_arare", 4, 1, 53], ["arare_run", 5, 17, 40]], "split": {"e": 4, "d": 3, "c": 2, "b": 1, "a": 0}}')
 const newdata=newdatas.data;
 const imglist=newdatas.imglist;
 const split=newdatas.split;
