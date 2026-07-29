@@ -286,7 +286,7 @@ function init(){
     const show=document.getElementById("show_image");
     var result_string="";
     for(let i in data.available){
-        result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\" width="+data.available[i][1]+" height="+data.available[i][2]+"/>");
+        result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\"  style=\"width:"+data.available[i][1]+"px;height:"+data.available[i][2]+"px\"/>");
     }
     show.innerHTML=result_string;
 }
@@ -383,7 +383,7 @@ function process(){
     }
     for(let i in data.available){
         if(e_a[i] && (c_a[i] || !has_check)){
-            result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\" width="+data.available[i][1]+" height="+data.available[i][2]+"/>");
+            result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\"  style=\"width:"+data.available[i][1]+"px;height:"+data.available[i][2]+"px\"/>");
         }
     }
     show.innerHTML=result_string;
@@ -422,12 +422,12 @@ function process_new(){
             let name=imglist[i][0];
             if(modes){
                 if((arl&&newdata[name][2].includes('arl'))||(nnk&&newdata[name][2].includes('nnk'))||(ritsu&&newdata[name][2].includes('ritsu'))||(myk&&newdata[name][2].includes('myk'))||(yuno&&newdata[name][2].includes('yuno'))||(viola&&newdata[name][2].includes('viola'))||(other&&newdata[name][2].includes('other'))){
-                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
                 }
             }
             else{
                 if(!((arl&&!newdata[name][2].includes('arl'))||(nnk&&!newdata[name][2].includes('nnk'))||(ritsu&&!newdata[name][2].includes('ritsu'))||(myk&&!newdata[name][2].includes('myk'))||(yuno&&!newdata[name][2].includes('yuno'))||(viola&&!newdata[name][2].includes('viola'))||(other&&!newdata[name][2].includes('other')))){
-                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
                 }
             }
         }
@@ -435,7 +435,7 @@ function process_new(){
     else{
         for(let i=start;i<end;i++){
             let name=imglist[i][0];
-            result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+            result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
         }
     }
     show.innerHTML=result_string;
