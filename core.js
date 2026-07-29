@@ -242,8 +242,10 @@ const data={
     }
 };
 
-const newdata=eval("");
-const imglist=eval("");
+const newdatas=eval('{"data":{},"imglist":[],"split":{}}')
+const newdata=newdatas.data;
+const imglist=newdatas.imglist;
+const split=newdatas.split;
 
 //new encoding:{name:["format","description",episode(num),["character"](,[width,height])]}
 
@@ -258,7 +260,20 @@ function turn(){
         process();
     }
 }
-
+function turn_mode(){
+    if(change_button.innerHTML=="to new"){
+        alert("抱歉，旧版编码不支持切换“包含任意”与“包含全部”，敬请谅解");
+    }
+    else{
+        const text_i=document.getElementById("including");
+        if(text_i.innerHTML=="角色（包含任意）"){
+            text_i.innerHTML="角色（包含全部）";
+        }
+        else{
+            text_i.innerHTML="角色（包含任意）";
+        }
+    }
+}
 function change_checkbox(target_id){
     const target=document.getElementById(target_id);
     target.selected=!target.selected;
@@ -372,6 +387,53 @@ function process(){
 function process_new(){
     const show=document.getElementById("show_image");
     var result_string="";
+    var start=0;
+    var end=imglist.length;
+    if(document.getElementById("e_1").selected){
+        end=split.b;
+    }
+    else if(document.getElementById("e_2").selected){
+        start=split.b;
+        end=split.c;
+    }
+    else if(document.getElementById("e_3").selected){
+        start=split.c;
+        end=split.d;
+    }
+    else if(document.getElementById("e_4").selected){
+        start=split.d;
+        end=split.e;
+    }
+    else if(document.getElementById("e_5").selected){
+        start=split.e;
+        end=split.n;
+    }
+    else if(document.getElementById("e_other").selected){
+        start=split.n;
+    }
+    const arl=document.getElementById('arare').checked,nnk=document.getElementById('nonoka').checked,ritsu=document.getElementById('ritsu').checked,myk=document.getElementById("miyako").checked,yuno=document.getElementById('yuno').checked,viola=document.getElementById('viola').checked,other=document.getElementById('other_c').checked;
+    const modes=(document.getElementById('including').innerHTML=='角色（包含任意）');
+    if(arl||nnk||ritsu||myk||yuno||viola||other){
+        for(let i=start;i<end;i++){
+            let name=imglist[i][0];
+            if(modes){
+                if((arl&&newdata[name][2].includes('arl'))||(nnk&&newdata[name][2].includes('nnk'))||(ritsu&&newdata[name][2].includes('ritsu'))||(myk&&newdata[name][2].includes('myk'))||(yuno&&newdata[name][2].includes('yuno'))||(viola&&newdata[name][2].includes('viola'))||(other&&newdata[name][2].includes('other'))){
+                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+                }
+            }
+            else{
+                if(!((arl&&!newdata[name][2].includes('arl'))||(nnk&&!newdata[name][2].includes('nnk'))||(ritsu&&!newdata[name][2].includes('ritsu'))||(myk&&!newdata[name][2].includes('myk'))||(yuno&&!newdata[name][2].includes('yuno'))||(viola&&!newdata[name][2].includes('viola'))||(other&&!newdata[name][2].includes('other')))){
+                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+                }
+            }
+        }
+    }
+    else{
+        for(let i=start;i<end;i++){
+            let name=imglist[i][0];
+            result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\" width="+newdata[name][3]+" height="+newdata[name][4]+"/>");
+        }
+    }
     show.innerHTML=result_string;
 }
 function selfcheck(){
