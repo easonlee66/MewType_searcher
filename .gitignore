@@ -4,4 +4,3 @@ img/*.txt
 img/*.torrent
 olddata.json
 jekyll_test/*
-data.py
