@@ -242,10 +242,10 @@ const data={
     }
 };
 
-const newdatas=JSON.parse('{"data": {"arare_first": ["jpg", "\u521d\u6b21\u89c1\u9762", ["arl"], 320, 180], "o": ["jpg", "\u54e6\uff1f", ["nnk", "yuno", "myk", "other"], 320, 180], "ritsu_hito": ["jpg", "\u6b38\uff0c\u662f\u4eba\uff1f", ["ritsu", "yuno"], 320, 180], "nonoka_arare": ["png", "\u91ce\u4e43\u82b1\u963f\u62c9\u857e\u9ad8\u5174", ["nnk", "arl"], 320, 180], "arare_run": ["png", "\u963f\u62c9\u857e\u5e26\u5f8b\u9003\u8dd1", ["arl", "ritsu", "viola", "other"], 320, 180]}, "imglist": [["arare_first", 1, 0, 58], ["o", 2, 8, 9], ["ritsu_hito", 3, 11, 22], ["nonoka_arare", 4, 1, 53], ["arare_run", 5, 17, 40]], "split": {"e": 4, "d": 3, "c": 2, "b": 1, "a": 0}}')
-const newdata=newdatas.data;
-const imglist=newdatas.imglist;
-const split=newdatas.split;
+var newdatas;
+var newdata;
+var imglist;
+var split;
 
 //new encoding:{name:["format","description",episode(num),["character"](,[width,height])]}
 
@@ -282,7 +282,18 @@ function change_checkbox(target_id){
     const target=document.getElementById(target_id);
     target.selected=!target.selected;
 }
-function init(){
+function initf(jqxhr,textStatus,err){
+    const result=document.getElementById('result');
+    const imgs=document.getElementById('show_image');
+    alert("读取信息时发生错误！");
+    result.innerHTML="无法访问data.json，以下为报错信息：<br/>jqxhr:"+jqxhr.toString()+"<br/>textStatus:"+textStatus+"<br/>err:"+err;
+    imgs.innerHTML="<img src=\"img/manager_badnews.png\" alt=\"无法访问\" title=\"出错了\"  style=\"width:"+320+"px;height:"+180+"px\"/>";
+}
+function inits(gotdata){
+    newdatas=gotdata;
+    newdata=newdatas.data;
+    imglist=newdatas.imglist;
+    split=newdatas.split;
     const show=document.getElementById("show_image");
     var result_string="";
     for(let i in data.available){
@@ -439,6 +450,16 @@ function process_new(){
         }
     }
     show.innerHTML=result_string;
+}
+function jsonTest(){
+    const show=document.getElementById("result");
+    $.getJSON('data.json', function(data) {
+        console.log(data);
+        show.innerHTML=data.toString();
+    }).fail(function(jqxhr, textStatus, error) {
+        let err = textStatus + ', ' + error;
+        console.error('Request Failed: ' + err);
+    });
 }
 function selfcheck(){
     const show=document.getElementById("result");
