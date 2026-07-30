@@ -26,7 +26,7 @@ while True:
         break
     commands=command.split()
 # input check
-    if '.' in commands[0]:
+    if '.' in commands[0] and commands[1]!='jpg' and commands[1]!='png' and commands[1] !='gif':
         commands=commands[0].split('.')+commands[1:]
     if len(commands)<7:
         print("wrong input:length less than 7")
