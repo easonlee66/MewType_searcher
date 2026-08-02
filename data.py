@@ -36,6 +36,7 @@ while True:
         continue
     elif not commands[0]+'.'+commands[1] in valid_img:
         print("wrong input:img not found!")
+        continue
     elif commands[3]<'1' or commands[3]>'9':
         print(f"wrong input:episode information need number 1-14(got {commands[3]})")
         continue
@@ -56,6 +57,9 @@ while True:
         if commands[-2]<'1' or commands[-2]>'4':
             print('wrong input:width information is wrong or not proper! expect 100-499')
             continue
+    if commands[0] in data:
+        print("img name is used, please rename this img!")
+        break
 # check end
     result_list:list
     if commands[-1]=='s':
