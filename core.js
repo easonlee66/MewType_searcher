@@ -6,9 +6,9 @@ const data={
         die:["大家都要死掉了",320,180,"jpg"],
         yuno_die:["大家都要死掉了，为什么会变成这样",320,180,"jpg"],
         nonoka_letmesee:["野乃花突脸",214,180,"png"],
-        arare_salute:["阿拉蕾敬礼",320,156,"jpg"],
-        arare_first:["初次见面",320,180,"jpg"],
-        arare_lifemess:["今天的人生，糟糟糟糟糟",320,180,"jpg"],
+//        arare_salute:["阿拉蕾敬礼",320,156,"jpg"],
+//        arare_first:["初次见面",320,180,"jpg"],
+//        arare_lifemess:["今天的人生，糟糟糟糟糟",320,180,"jpg"],
         arare_wake:["阿拉蕾睡醒",320,180,"png"],
         arare_wake2:["阿拉蕾睡醒",320,180,"png"],
         arare_wake3:["阿拉蕾睡醒",320,180,"png"],
@@ -30,7 +30,7 @@ const data={
         arare_shock6:["阿拉蕾被吓到",320,180,"png"],
         arr_logout:["LOG OUT",320,180,"png"],
         arr_afraid:["阿拉蕾抱头蹲",320,180,"png"],
-        o:["哦？",320,180,"jpg"],
+//        o:["哦？",320,180,"jpg"],
         arr:["阿拉蕾立正",320,180,"png"],
         nnk_smile:["野乃花笑",320,180,"png"],
         daijobu:["没事吧？",320,180,"jpg"],
@@ -88,11 +88,11 @@ const data={
         kakoi:["好帅",320,180,"jpg"],
         myk8_zenbu:["全部好烦",320,180,"jpg"],
         miyako_ai:["人类败北，失业就在眼前？",320,180,"jpg"],
-        ritsu_hito:["诶 是人",320,180,"jpg"],
+//        ritsu_hito:["诶 是人",320,180,"jpg"],
         ritsu:["律震惊",274,180,"jpg"],
         jikankire:["时间到",320,180,"jpg"],
         viola:["薇欧拉",320,180,"jpg"],//TODO complete desc
-        nonoka_arare:["野乃花阿拉蕾高兴",320,180,"png"],
+//        nonoka_arare:["野乃花阿拉蕾高兴",320,180,"png"],
         arare_desune:["也是呢",320,180,"jpg"],
         arare_7:["如果时间合适的话",320,180,"jpg"],
         arare_must:["将来某一天，绝对会的",320,180,"jpg"],
@@ -206,7 +206,7 @@ const data={
         vio19:["薇欧拉",320,180,"png"],//TODO complete desc
         arare_egg:["阿拉蕾",320,180,"png"],//TODO complete desc
         arare10:["阿拉蕾",320,180,"png"],//TODO complete desc
-        arare_run:["阿拉蕾带律逃跑",320,180,"png"],
+//        arare_run:["阿拉蕾带律逃跑",320,180,"png"],
         vio_cry:["薇欧拉装可怜",320,180,"png"],
         arare_5:["阿拉蕾",320,180,"png"],//TODO complete desc
         doshiyo:["怎么办，可能要被起诉了",320,180,"jpg"],
@@ -220,8 +220,8 @@ const data={
         kanngaero:["一起想吧",320,180,"jpg"],
         arare_nod:["阿拉蕾",320,180,"png"],//TODO complete desc
         en:["嗯",320,180,"jpg"],
-        zhong:["仲蕾",179,180,"jpg"],
-        buzhong:["不仲蕾",180,180,"jpg"]
+//        zhong:["仲蕾",179,180,"jpg"],
+//        buzhong:["不仲蕾",180,180,"jpg"]
     },
     character:{
         arare:["arare_salute","arare_first","arare_darenotosee","arare_exciting","arare_finallysee","arare_happy","arare_lifemess","arare_play","arare_shock","arare_sostrong","arare_surprise","arare_sweat","buzhong","nonoka_arare","zhong","arare_2","arare_3","arare_4","arare_5","doshide","arare_apologize","arare_come_home","arare_cry","arare_depress","arare_egg","arare_egg2","arare_egg3","arare_egg4","arare_egg5","arare_nod","arare_run","arare_shock2","arare_shock3","arare_shock4","arare_shock5","arare_sound_only","arare","mienai","arare2","arare3","arare4","arare5","arare6","arare7","arare8","arare9","arare10","arare_7","arare_8","arare_desune","arare_impossible","arare_must","maru_kitai","mewtype_hai","arare_cry2","arare_majiruru","arare_shock6","arare_smile","arare_surprise1","arare_wake","arare_wake2","arare_wake3","arr_afraid","arr_face","arr_logout","arr_stand","arr_majiruru","arr_stand2","arr_without_color","arr_zipmouth","arr","nnk_head","dame","dekirenai","demo","doshiyo","gomenn","kowai","nani","sonada","wakaranai","yabai"/**/,"arigadou1","daijiobu","kakoi","yumewapower","arr0_kowai","arr1_kami","arr2_school","arr3_nai","arr4_itai","arr5_yishun","arr6_yabai","arr7_kaikou","arr7_zipmouth","arr8_arigadou","nnk7_yabari","myk6_arigadou","myk8_zenbu","nnk_yabari"],
