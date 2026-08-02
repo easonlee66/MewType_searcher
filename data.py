@@ -16,12 +16,12 @@ split=datas["split"]
 
 alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n')
 valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
-valid_img=os.listdir('img')
 
 # xxx jpg aaa 1 12 37 myk arl (360 180 s)/(360 w)
 
 while True:
     command=input()
+    valid_img=os.listdir('img')
     if command=='end':
         break
     commands=command.split()
