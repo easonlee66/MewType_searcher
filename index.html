@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href="Mugendai_muw_type_icon.png"/>
         <title>梦限大MewType表情搜寻器</title>
-        <noscript>Javascript is required.</noscript>
         <script src="https://cdn.staticfile.net/jquery/3.6.0/jquery.min.js"></script>
         <script src="core.js"></script>
         <style>
@@ -42,9 +41,17 @@
             img{
                 margin: 2px 4px;
             }
+            select{
+                cursor: pointer;
+                outline: none;
+                font-size: 1em;
+                padding-right: 2.5em;
+                border-radius: 4px;
+            }
         </style>
     </head>
     <body onload="$.getJSON('data.json',inits).fail(initf)">
+        <noscript>Javascript is required for this website.</noscript>
         <div id="header"><h1>梦限大MewType表情搜寻器</h1></div>
         <div id="core_div">
             <div id="choose_page">
@@ -61,6 +68,9 @@
                     <option value="3" id="e_3">第三集</option>
                     <option value="4" id="e_4">第四集</option>
                     <option value="5" id="e_5">第五集</option>
+                    <option value="6" id="e_6">第六集</option>
+                    <option value="7" id="e_7">第七集</option>
+                    <option value="8" id="e_8">第八集</option>
                     <option value="other_e" id="e_other">其他</option>
                 </select>
                 <br/>
@@ -81,7 +91,7 @@
                 <label for="other_c" onclick="change_checkbox('other_c')" class="pointer_text">其他</label>
                 <br/>
                 <button id="submit" onclick="process()" class="block">筛选</button>
-                <button id="change_on" onclick="turn()" class="block">to new</button>
+                <button id="change_on" onclick="turn()" class="block">to old</button>
                 <!--<button onclick="selfcheck()" class="block">测试用按钮</button>-->
             </div>
         </div>

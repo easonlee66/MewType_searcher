@@ -296,8 +296,9 @@ function inits(gotdata){
     split=newdatas.split;
     const show=document.getElementById("show_image");
     var result_string="";
-    for(let i in data.available){
-        result_string+=("<img src=\"img/"+i+"."+data.available[i][3]+"\" alt=\""+data.available[i][0]+"\" title=\""+data.available[i][0]+"\"  style=\"width:"+data.available[i][1]+"px;height:"+data.available[i][2]+"px\"/>");
+    for(let i of imglist){
+        let name=i[0]
+        result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
     }
     show.innerHTML=result_string;
 }
