@@ -18,6 +18,13 @@ alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n')
 valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 
 # xxx jpg aaa 1 12 37 myk arl (360 180 s)/(360 w)
+#14 0 for op
+#14 1 for ed
+#14 2 for pv
+#14 3 for mv
+#14 4 for cv
+#14 5/6 for livestreaming
+#14 7 for othersource
 
 while True:
     command=input()
@@ -81,7 +88,7 @@ while True:
             has_wrong=True
             break
     if has_wrong:
-        print("input error:character has unexpected data!(expect arl nnk ritsu myk yuno viola other)")
+        print(f"input error:character has unexpected data!(expect{valid_input})")
         continue
     data[commands[0]]=result_list
     imglist.append([commands[0],int(commands[3]),int(commands[4]),int(commands[5])])
