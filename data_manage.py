@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import json as js
+import os
 
 with open("data.json",encoding='utf-8') as f:
     datas=js.load(f)
@@ -160,6 +161,13 @@ while True:
                     if((cmode==0 and strict_cmp(datas['data'][i][2],character)) or (cmode==1 and any_cmp(datas['data'][i][2],character)) or (cmode==2 and all_cmp(datas['data'][i][2],character))):
                         if(datas['data'][i][1]==command[1]):
                             print(f"{i}.{datas['data'][i][0]}")
+    if command[0]=='check':
+        valid_file=os.listdir('img')
+        for i in valid_file:
+            if ".png" in i or '.gif' in i or '.jpg' in i:
+                valid_img=i[:-4]
+                if valid_img not in datas['data']:
+                    print(i)
     
     if command[0]=='cal':
         if(len(command)!=3):
