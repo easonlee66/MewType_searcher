@@ -1,5 +1,5 @@
 "use strict";
-//mv_laozili.jpg not register
+//mv_laozili.jpg yumewapower.jpg not register
 //delete arare_6.png ritsu_determine.png viola2.png arare1.png arare3.png vio7.png yuno_2.png myk_sleep
 const data={
     available:{
@@ -258,6 +258,8 @@ function turn(){
         process_new();
     }
     else{
+        const text_i=document.getElementById("including");
+        text_i.innerHTML="角色（包含任意）";
         change_button.innerHTML="to new";
         submit_button.onclick=process;
         process();
@@ -348,7 +350,10 @@ function process(){
         }
     }
     else{
-        alert("e error input");
+        alert("暂不支持");
+        for(let i in e_a){
+            e_a[i]=true;
+        }
     }
     var has_check=false;
     if(document.getElementById("arare").checked){
@@ -426,6 +431,9 @@ function process_new(){
     }
     else if(document.getElementById("e_other").selected){
         start=split.n;
+    }
+    else{
+        alert("暂不支持");
     }
     const arl=document.getElementById('arare').checked,nnk=document.getElementById('nonoka').checked,ritsu=document.getElementById('ritsu').checked,myk=document.getElementById("miyako").checked,yuno=document.getElementById('yuno').checked,viola=document.getElementById('viola').checked,other=document.getElementById('other_c').checked;
     const modes=(document.getElementById('including').innerHTML=='角色（包含任意）');
