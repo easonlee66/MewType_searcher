@@ -26,7 +26,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 5/6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾")
+print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾、第三集阿拉华生陷入死胡同了、第四集4:37处阿拉蕾滚来滚去、第四集7:39处薇欧拉挥手告别\n其他缺图:第四集8:27处律挺好颜-无字幕 第四集9:00处")
 
 while True:
     command=input()
