@@ -24,7 +24,10 @@ def all_cmp(a:list,b:list):
             return False
     return True
 
+compulsory_regenerate=False
+
 while True:
+    change_data=True
     commands=input()
     if commands=='end':
         break
@@ -65,7 +68,7 @@ while True:
             continue
         episode=0
         character=[]
-        cmode=0 #0 strict 1 any 2 all
+        cmode=-1 #0 strict 1 any 2 all
         size=0 #-1 320x180 -2 any not 320x180
         if '-e' in command:
             place=command.index('-e')
@@ -96,6 +99,7 @@ while True:
             del command[place]
         if '-cstrict' in command or '-c' in command:
             place=-1
+            cmode=0
             if '-c' in command:
                 place=command.index('-c')
             else:
@@ -131,7 +135,7 @@ while True:
                 command.remove(i)
         if '-cany' in command:
             cmode=1
-            place=command.index('-call')
+            place=command.index('-cany')
             if(len(command)-place<2):
                 print("err -c missing character information")
                 continue
@@ -151,16 +155,36 @@ while True:
         if episode==0:
             for i in datas['data']:
                 if((size==-1 and datas['data'][i][3]==320 and datas['data'][i][4]==180) or (size==-2 and (datas['data'][i][3]!=320 or datas['data'][i][4]!=180)) or size==0 or (datas['data'][i][3]*datas['data'][i][4]==size)):
-                    if((cmode==0 and strict_cmp(datas['data'][i][2],character)) or (cmode==1 and any_cmp(datas['data'][i][2],character)) or (cmode==2 and all_cmp(datas['data'][i][2],character))):
+                    if(cmode==-1 or (cmode==0 and strict_cmp(datas['data'][i][2],character)) or (cmode==1 and any_cmp(datas['data'][i][2],character)) or (cmode==2 and all_cmp(datas['data'][i][2],character))):
                         if(datas['data'][i][1]==command[1]):
                             print(f"{i}.{datas['data'][i][0]}")
         else:
-            for j in range(datas['split'][alphabet[episode-1]],datas['split'][alphabet[episode]]):
+            for j in range(datas['split'][alphabet[episode-1]],datas['split'][alphabet[episode-1]]):
                 i=datas['imglist'][j][0]
                 if((size==-1 and datas['data'][i][3]==320 and datas['data'][i][4]==180) or (size==-2 and (datas['data'][i][3]!=320 or datas['data'][i][4]!=180)) or size==0 or (datas['data'][i][3]*datas['data'][i][4]==size)):
-                    if((cmode==0 and strict_cmp(datas['data'][i][2],character)) or (cmode==1 and any_cmp(datas['data'][i][2],character)) or (cmode==2 and all_cmp(datas['data'][i][2],character))):
+                    if(cmode==-1 or (cmode==0 and strict_cmp(datas['data'][i][2],character)) or (cmode==1 and any_cmp(datas['data'][i][2],character)) or (cmode==2 and all_cmp(datas['data'][i][2],character))):
                         if(datas['data'][i][1]==command[1]):
                             print(f"{i}.{datas['data'][i][0]}")
+
+    if command[0]=='help':
+        print("""check:check if any img not in data.json
+        cal width height: calculate width with height 180
+        d filename: delete this data from data.json
+        desc filename description: change description of this file
+        find [option] description: find the filename of this description""")
+
+    if command[0]=='info':
+        if(len(command)!=2):
+            print("len err")
+            continue
+        if(command[1] not in datas['data']):
+            print("err key not found")
+            continue
+        print(datas['data'][command[1]])
+        for i in datas['imglist']:
+            if i[0]==command[1]:
+                print(i)
+
     if command[0]=='check':
         valid_file=os.listdir('img')
         for i in valid_file:
