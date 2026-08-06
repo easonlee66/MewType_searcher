@@ -18,15 +18,15 @@ alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n')
 valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 
 # xxx jpg aaa 1 12 37 myk arl (360 180 s)/(360 w)
-#14 0 for op
-#14 1 for ed
-#14 2 for pv
-#14 3 for mv
-#14 4 for cv
-#14 5/6 for livestreaming
+#14 0/1 for op(op1 and op2)
+#14 2 for ed
+#14 3 for pv 1-100 pv1 101-150 pv0 151-250 pv2 251-300 cm15s 301-350 cm30s
+#14 4 for mv
+#14 5 for cv
+#14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾、第三集阿拉华生陷入死胡同了、第四集4:37处阿拉蕾滚来滚去、第四集7:39处薇欧拉挥手告别\n其他缺图:第四集8:27处律挺好颜-无字幕 第四集9:00处")
+print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾、第三集阿拉华生陷入死胡同了、第四集4:37处阿拉蕾滚来滚去、第四集7:39处薇欧拉挥手告别\n其他缺图:第四集8:27处律挺好颜-无字幕 第四集9:00处\nnnk3.jpg转成png")
 
 while True:
     command=input()
