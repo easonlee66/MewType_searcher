@@ -122,7 +122,6 @@ const data={
         miyako_ditou:["都子低头",320,180,"png"],
         yuno:["由乃看屏幕",320,180,"png"],
         dame:["不行吗",320,180,"jpg"],
-        manager_thinking:["经纪人思考",320,180,"png"],
         manager:["明显不太对劲",320,180,"jpg"],
         shide:["你们知道些什么吗",320,180,"jpg"],
         nanimoshiranai:["我什么都不知道",320,180,"jpg"],
