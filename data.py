@@ -26,6 +26,8 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 5/6 for livestreaming
 #14 7 for othersource
 
+print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾")
+
 while True:
     command=input()
     valid_img=os.listdir('img')
