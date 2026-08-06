@@ -89,7 +89,6 @@ const data={
         myk8_zenbu:["全部好烦",320,180,"jpg"],
         miyako_ai:["人类败北，失业就在眼前？",320,180,"jpg"],
 //        ritsu_hito:["诶 是人",320,180,"jpg"],
-        ritsu:["律震惊",274,180,"jpg"],
         jikankire:["时间到",320,180,"jpg"],
         viola:["薇欧拉",320,180,"jpg"],//TODO complete desc
 //        nonoka_arare:["野乃花阿拉蕾高兴",320,180,"png"],
@@ -108,8 +107,6 @@ const data={
         arare_finallysee:["阿拉蕾眯眼看",320,180,"png"],
         arare_sostrong:["这么强",320,180,"png"],
         arare_happy:["阿拉蕾傻笑",320,180,"png"],
-        arare_exciting:["阿拉蕾兴奋",320,180,"png"],
-        ritsu_ghostback:["薇欧拉在律背后",320,180,"png"],
         ritsu_konomite:["薇欧拉给律看手机",320,180,"png"],
         viola_speak1:["薇欧拉",320,180,"png"],//TODO complete desc
         ritsu_shock:["律",320,180,"png"],//TODO complete desc
