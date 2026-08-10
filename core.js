@@ -396,7 +396,7 @@ function process_new(){
     else if(document.getElementById("e_other").selected){
         start=split.n;
     }
-    else{
+    else if(!document.getElementById("e_all").selected){
         alert("暂不支持");
     }
     const arl=document.getElementById('arare').checked,nnk=document.getElementById('nonoka').checked,ritsu=document.getElementById('ritsu').checked,myk=document.getElementById("miyako").checked,yuno=document.getElementById('yuno').checked,viola=document.getElementById('viola').checked,other=document.getElementById('other_c').checked;
