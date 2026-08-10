@@ -26,7 +26,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n目前缺乏动图：第一集野乃花听由乃音乐摇摆、第三集4:31处阿拉蕾、第三集阿拉华生陷入死胡同了、第四集4:37处阿拉蕾滚来滚去、第四集7:39处薇欧拉挥手告别\n其他缺图:第四集8:27处律挺好颜-无字幕 第四集9:00处\nnnk3.jpg转成png")
+print("备忘录：")
 
 command_cache=list()
 
@@ -60,20 +60,23 @@ while True:
 # check end
 
 for i in command_cache:
-    valid_img=os.listdir('img')
     filename=input()
+    valid_img=os.listdir('img')
     while filename not in valid_img or (filename[-4:]!='.jpg' and filename[-4:]!='.gif' and filename[-4:]!='.png'):
         print('img not found!')
         filename=input()
+        valid_img=os.listdir('img')
     file_name=filename.split('.')
     while len(file_name)!=2 or file_name[0] in data:
         print('input error!')
         if file_name[0] in data:
             print("img name used!")
         filename=input()
+        valid_img=os.listdir('img')
         while filename not in valid_img or (filename[-4:]!='.jpg' and filename[-4:]!='.gif' and filename[-4:]!='.png'):
             print('img not found!')
             filename=input()
+        valid_img=os.listdir('img')
         file_name=filename.split('.')
     result_list=[file_name[1],i[0],i[4:],320,180]
     if len(result_list)!=5:
