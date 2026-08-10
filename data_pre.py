@@ -26,7 +26,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：")
+print("备忘录：\n第六集0:37处neta图无字幕，第六集3:23处都子黑眼圈无字幕，第六集5:13处谢谢大家换成无字幕，第六集5:46处无字幕，第六集11：20处阿拉蕾脸红，第六集11:45处阿拉蕾，第六集13:04处都子，第六集13:32处薇欧拉，第六集14：38都子,15:07,20:39,21:53\n第六集13:35动图")
 
 command_cache=list()
 
@@ -60,23 +60,14 @@ while True:
 # check end
 
 for i in command_cache:
+    print(i[0])
     filename=input()
-    valid_img=os.listdir('img')
-    while filename not in valid_img or (filename[-4:]!='.jpg' and filename[-4:]!='.gif' and filename[-4:]!='.png'):
-        print('img not found!')
-        filename=input()
-        valid_img=os.listdir('img')
     file_name=filename.split('.')
     while len(file_name)!=2 or file_name[0] in data:
         print('input error!')
         if file_name[0] in data:
             print("img name used!")
         filename=input()
-        valid_img=os.listdir('img')
-        while filename not in valid_img or (filename[-4:]!='.jpg' and filename[-4:]!='.gif' and filename[-4:]!='.png'):
-            print('img not found!')
-            filename=input()
-        valid_img=os.listdir('img')
         file_name=filename.split('.')
     result_list=[file_name[1],i[0],i[4:],320,180]
     if len(result_list)!=5:
