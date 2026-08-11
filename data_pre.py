@@ -62,6 +62,8 @@ while True:
 for i in command_cache:
     print(i[0])
     filename=input()
+    if filename=='pass':
+        continue
     file_name=filename.split('.')
     while len(file_name)!=2 or file_name[0] in data:
         print('input error!')
