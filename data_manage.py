@@ -202,6 +202,9 @@ while True:
             continue
         print(int(command[1])*180//int(command[2]))
 
+    if command[0]=='count':
+        print(len(datas['imglist']))
+        
     datas['imglist'].sort(key=lambda s:s[3])
     datas['imglist'].sort(key=lambda s:s[2])
     datas['imglist'].sort(key=lambda s:s[1])
