@@ -74,7 +74,7 @@ while True:
     if commands[-1]=='s':
         result_list=commands[1:3]+[commands[6:-3],int(commands[-3]),int(commands[-2])]
     else:
-        pic=img.open(os.path.join('img',command[0]+'.'+command[1]))
+        pic=img.open(os.path.join('img',commands[0]+'.'+commands[1]))
         result_list=commands[1:3]+[commands[6:],pic.width*180//pic.height,180]
     if len(result_list)!=5:
         print("unknown error! parse wrong! stop processing this data!")
