@@ -57,6 +57,8 @@ while True:
     command_cache.append(commands)
 # check end
 
+filename_cache=""
+
 for i in command_cache:
     print(i[0])
     filename=input()
@@ -69,6 +71,8 @@ for i in command_cache:
             print("img name used!")
         filename=input()
         file_name=filename.split('.')
+    filename_cache+=filename
+    filename_cache+='\n'
     result_list=[file_name[1],i[0],i[4:],320,180]
     if len(result_list)!=5:
         print("unknown error! parse wrong! stop processing this data!")
@@ -85,3 +89,5 @@ for i in range(len(imglist)):
 
 with open("data.json",encoding='utf-8',mode='w') as f:
     js.dump({"data":data,"imglist":imglist,"split":split},f)
+
+print(filename_cache)
