@@ -26,8 +26,6 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n第六集0:37处neta图无字幕，第六集3:23处都子黑眼圈无字幕，第六集5:13处谢谢大家换成无字幕，第六集5:46处无字幕，第六集11：20处阿拉蕾脸红，第六集11:45处阿拉蕾，第六集13:04处都子，第六集13:32处薇欧拉，第六集14：38都子,15:07,20:39,21:53\n第六集13:35动图")
-
 command_cache=list()
 
 while True:
