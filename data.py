@@ -27,7 +27,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n第六集14：38都子动图，第六集13:35动图，第七集5:6处都子疯魔弹琴,第七集8:25律,第七集10:25,第七集10:39,第七集10:48,11:47\n都子弹琴疯魔图:1:46、2:18,2:26,5分左右碎屏选一个,5:58,7:22,7:31,14:20,15:06,20:6,20:54,20:56,21:54\n走过路过不要错过,15:40左右炎上评论")
+print("备忘录：\n第六集14：38都子动图，第六集13:35动图，第七集5:6处都子疯魔弹琴,第七集8:25律,第七集10:25,第七集10:39,第七集10:48,11:47\n走过路过不要错过,15:40左右炎上评论")
 
 while True:
     command=input()
@@ -76,6 +76,8 @@ while True:
     else:
         pic=img.open(os.path.join('img',commands[0]+'.'+commands[1]))
         result_list=commands[1:3]+[commands[6:],pic.width*180//pic.height,180]
+        if result_list[3]>=390 and result_list[0]=='jpg':
+            result_list[3]=320
     if len(result_list)!=5:
         print("unknown error! parse wrong! stop processing this data!")
         continue
