@@ -4,3 +4,5 @@ img/*.txt
 img/*.torrent
 olddata.json
 jekyll_test/*
+calculator.exe
+calculator.cpp
