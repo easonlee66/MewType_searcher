@@ -2,6 +2,7 @@
 
 import json as js
 import os
+from PIL import Image as img
 
 with open("data.json",encoding='utf-8') as f:
     datas=js.load(f)
@@ -211,7 +212,30 @@ while True:
                 print(datas['split']['g']-datas['split']['f'])
             elif command[1]=='7':
                 print(datas['split']['n']-datas['split']['g'])
-      
+
+    if command[0]=='cut':
+        if len(command)!=2:
+            print('err input')
+            continue
+        valid_img=os.listdir('img')
+        if('.' not in command[1]):
+            command[1]+='.jpg'
+        if command[1] not in valid_img:
+            print('img not found!')
+            continue
+        path=os.path.join('img',command[1])
+        pic=img.open(path)
+        pics=pic.crop((162,0,1442,720))
+        pics.save(path)
+
+#    if command[0]=='list':
+#        if len(command)!=2:
+#            print('err input')
+#            continue
+#        if command[1]=='7':
+#            for i in datas['imglist'][datas['split']['g']:datas['split']['n']]:
+#                print(i[0]+'.jpg')
+
     datas['imglist'].sort(key=lambda s:s[3])
     datas['imglist'].sort(key=lambda s:s[2])
     datas['imglist'].sort(key=lambda s:s[1])
