@@ -26,7 +26,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n")
+print("备忘录：\n第六集14：38都子动图，第六集13:35动图")
 
 while True:
     command=input()
