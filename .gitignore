@@ -6,3 +6,6 @@ olddata.json
 jekyll_test/*
 calculator.exe
 calculator.cpp
+cache
+temporarytool.cpp
+temporarytool.exe
