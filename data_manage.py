@@ -192,19 +192,26 @@ while True:
                 valid_img=i[:-4]
                 if valid_img not in datas['data']:
                     print(i)
-    
-    if command[0]=='cal':
-        if(len(command)!=3):
-            print('len err')
-            continue
-        elif(command[1]<'1' or command[1]>'9' or command[2]<'1' or command[2]>'9'):
-            print('err not number')
-            continue
-        print(int(command[1])*180//int(command[2]))
 
     if command[0]=='count':
-        print(len(datas['imglist']))
-        
+        if len(command)==1:
+            print(len(datas['imglist']))
+        elif len(command)==2:
+            if command[1]=='1':
+                print(datas['split']['b']-datas['split']['a'])
+            elif command[1]=='2':
+                print(datas['split']['c']-datas['split']['b'])
+            elif command[1]=='3':
+                print(datas['split']['d']-datas['split']['c'])
+            elif command[1]=='4':
+                print(datas['split']['e']-datas['split']['d'])
+            elif command[1]=='5':
+                print(datas['split']['f']-datas['split']['e'])
+            elif command[1]=='6':
+                print(datas['split']['g']-datas['split']['f'])
+            elif command[1]=='7':
+                print(datas['split']['n']-datas['split']['g'])
+      
     datas['imglist'].sort(key=lambda s:s[3])
     datas['imglist'].sort(key=lambda s:s[2])
     datas['imglist'].sort(key=lambda s:s[1])
