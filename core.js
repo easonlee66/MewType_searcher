@@ -395,6 +395,10 @@ function process_new(){
     }
     else if(document.getElementById('e_6').selected){
         start=split.f;
+        end=split.g;
+    }
+    else if(document.getElementById('e_7').selected){
+        start=split.g;
         end=split.n;
     }
     else if(document.getElementById("e_other").selected){
