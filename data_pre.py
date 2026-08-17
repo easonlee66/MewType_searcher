@@ -66,7 +66,8 @@ with open('command_cache',encoding='utf-8',mode='a') as command_cache:
 if not interupt:
     with open('command_cache',encoding='utf-8',mode='r') as command_caches:
         command_cache=command_caches.readlines()
-        for i in command_cache:
+        for j in command_cache:
+            i=j.split()
             print(i[0])
             filename=input()
             if filename=='pass':
