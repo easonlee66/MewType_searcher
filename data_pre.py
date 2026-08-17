@@ -26,68 +26,73 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-command_cache=list()
+#command_cache=list()
 
-while True:
-    command=input()
-    if command=='end':
-        break
-    commands=command.split()
-# input check
-    if len(commands)<5:
-        print("wrong input:length less than 5")
-        continue
-    elif commands[1]<'1' or commands[1]>'9':
-        print(f"wrong input:episode information need number 1-14(got {commands[1]})")
-        continue
-    elif commands[2]<'0' or commands[2]>'9':
-        print(f"wrong input:episode information need number 0-30(got {commands[2]})")
-        continue
-    elif commands[3]<'0' or commands[3]>'9':
-        print(f"wrong input:episode information need number 0-60(got {commands[3]})")
-        continue
-    has_wrong=False
-    for i in commands[4:]:
-        if i not in valid_input:
-            has_wrong=True
+interupt=False
+
+with open('command_cache',encoding='utf-8',mode='a') as command_cache:
+    while True:
+        command=input()
+        if command=='end':
+           break
+        if command=='interupt':
+            interupt=True
             break
-    if has_wrong:
-        print(f"input error:character has unexpected data!(expect{valid_input})")
-        continue
-    command_cache.append(commands)
+        commands=command.split()
+# input check
+        if len(commands)<5:
+            print("wrong input:length less than 5")
+            continue
+        elif commands[1]<'1' or commands[1]>'9':
+            print(f"wrong input:episode information need number 1-14(got {commands[1]})")
+            continue
+        elif commands[2]<'0' or commands[2]>'9':
+            print(f"wrong input:episode information need number 0-30(got {commands[2]})")
+            continue
+        elif commands[3]<'0' or commands[3]>'9':
+            print(f"wrong input:episode information need number 0-60(got {commands[3]})")
+            continue
+        has_wrong=False
+        for i in commands[4:]:
+            if i not in valid_input:
+                has_wrong=True
+                break
+        if has_wrong:
+            print(f"input error:character has unexpected data!(expect{valid_input})")
+            continue
+        command_cache.write(command+'\n')
 # check end
 
-filename_cache=""
+if not interupt:
+    with open('command_cache',encoding='utf-8',mode='r') as command_caches:
+        command_cache=command_caches.readlines()
+        for i in command_cache:
+            print(i[0])
+            filename=input()
+            if filename=='pass':
+                continue
+            file_name=filename.split('.')
+            while len(file_name)!=2 or file_name[0] in data:
+                print('input error!')
+                if file_name[0] in data:
+                    print("img name used!")
+                filename=input()
+                file_name=filename.split('.')
+            result_list=[file_name[1],i[0],i[4:],320,180]
+            if len(result_list)!=5:
+                print("unknown error! parse wrong! stop processing this data!")
+                continue
+            data[file_name[0]]=result_list
+            imglist.append([file_name[0],int(i[1]),int(i[2]),int(i[3])])
 
-for i in command_cache:
-    print(i[0])
-    filename=input()
-    if filename=='pass':
-        continue
-    file_name=filename.split('.')
-    while len(file_name)!=2 or file_name[0] in data:
-        print('input error!')
-        if file_name[0] in data:
-            print("img name used!")
-        filename=input()
-        file_name=filename.split('.')
-    filename_cache+=filename
-    filename_cache+='\n'
-    result_list=[file_name[1],i[0],i[4:],320,180]
-    if len(result_list)!=5:
-        print("unknown error! parse wrong! stop processing this data!")
-        continue
-    data[file_name[0]]=result_list
-    imglist.append([file_name[0],int(i[1]),int(i[2]),int(i[3])])
+        imglist.sort(key=lambda s:s[3])
+        imglist.sort(key=lambda s:s[2])
+        imglist.sort(key=lambda s:s[1])
 
-imglist.sort(key=lambda s:s[3])
-imglist.sort(key=lambda s:s[2])
-imglist.sort(key=lambda s:s[1])
+        for i in range(len(imglist)):
+            split[alphabet[imglist[-i-1][1]-1]]=len(imglist)-i-1
 
-for i in range(len(imglist)):
-    split[alphabet[imglist[-i-1][1]-1]]=len(imglist)-i-1
-
-with open("data.json",encoding='utf-8',mode='w') as f:
-    js.dump({"data":data,"imglist":imglist,"split":split},f)
-
-print(filename_cache)
+        with open("data.json",encoding='utf-8',mode='w') as f:
+            js.dump({"data":data,"imglist":imglist,"split":split},f)
+    with open('command_cache',encoding='utf-8',mode='w') as command_cache:
+        command_cache.write('')
