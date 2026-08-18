@@ -403,6 +403,10 @@ function process_new(){
     }
     else if(document.getElementById('e_8').selected){
         start=split.h;
+        end=split.i;
+    }
+    else if(document.getElementById('e_9').selected){
+        start=split.i;
         end=split.n;
     }
     else if(document.getElementById("e_other").selected){
