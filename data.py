@@ -27,7 +27,7 @@ valid_input=('arl','nnk','ritsu','myk','yuno','viola','other')
 #14 6 for livestreaming
 #14 7 for othersource
 
-print("备忘录：\n第六集14：38都子动图，第六集13:35动图，第七集5:6处都子疯魔弹琴,第七集8:25律,第七集10:25,第七集10:39,第七集10:48,11:47,第八集5:8,11:7,16:5,第九集10:21,12:56\n1:56,2:35,10:19,16:37,16:41,17:44,19:12,19:23,20:18,20:30,21:36,21:54,第九集开头阿拉蕾,0:44,3:24,myk sound only,5:24,6:11,7:23,都子倒在楼梯上,14:37\n走过路过不要错过,15:40左右炎上评论")
+print("备忘录：\n第六集14：38都子动图，第六集13:35动图，第七集5:6处都子疯魔弹琴,第七集8:25律,第七集10:25,第七集10:39,第七集10:48,11:47,第八集5:8,11:7,16:5,第九集10:21,12:56\n1:56,2:35,10:19,16:37,16:41,17:44,19:12,19:23,20:18,20:30,21:36,21:54,第九集开头阿拉蕾,0:44,3:24,myk sound only,5:24,6:11,7:23,都子倒在楼梯上,14:37,19:55\n走过路过不要错过,15:40左右炎上评论")
 
 while True:
     command=input()
@@ -69,16 +69,34 @@ while True:
     if commands[0] in data:
         print("img name is used, please rename this img!")
         break
+    pic=img.open(os.path.join('img',commands[0]+'.'+commands[1]))
+    if commands[-1]!='y' and commands[-1]!='n':
+        if commands[1]=='gif':
+            print('gif format. auto set uncapitalized')
+            commands.append('n')
+        elif commands[1]=='jpg':
+            print('jpg format. auto set capitalized')
+            commands.append('y')
+        elif pic.size==(1280,720):
+            print('1280x720. auto set capitalized')
+            commands.append('y')
+        elif pic.size==(1920,1080):
+            print('1920x1080. auto set uncapitalized')
+            commands.append('n')
+        elif pic.height/pic.width!=9/16:
+            print('not 16:9. auto set uncapitalized')
+            commands.append('n')
+        else:
+            commands.append(input('cannot auto set. please enter if this img is capitalized.(y or n)'))
 # check end
     result_list:list
-    if commands[-1]=='s':
-        result_list=commands[1:3]+[commands[6:-3],int(commands[-3]),int(commands[-2])]
+    if commands[-2]=='s':
+        result_list=commands[1:3]+[commands[6:-4],int(commands[-4]),int(commands[-3])]
     else:
-        pic=img.open(os.path.join('img',commands[0]+'.'+commands[1]))
-        result_list=commands[1:3]+[commands[6:],pic.width*180//pic.height,180]
+        result_list=commands[1:3]+[commands[6:-1],pic.width*180//pic.height,180,commands[-1]=='y']
         if result_list[3]>=390 and result_list[0]=='jpg':
             result_list[3]=320
-    if len(result_list)!=5:
+    if len(result_list)!=6:
         print("unknown error! parse wrong! stop processing this data!")
         continue
     characterlist=result_list[2]

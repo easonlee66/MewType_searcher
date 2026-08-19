@@ -79,8 +79,8 @@ if not interupt:
                     print("img name used!")
                 filename=input()
                 file_name=filename.split('.')
-            result_list=[file_name[1],i[0],i[4:],320,180]
-            if len(result_list)!=5:
+            result_list=[file_name[1],i[0],i[4:],320,180,True]
+            if len(result_list)!=6:
                 print("unknown error! parse wrong! stop processing this data!")
                 continue
             data[file_name[0]]=result_list
