@@ -3,6 +3,7 @@
 import json as js
 import os
 from PIL import Image as img
+import random as rand
 
 with open("data.json",encoding='utf-8') as f:
     datas=js.load(f)
@@ -227,6 +228,53 @@ while True:
         pic=img.open(path)
         pics=pic.crop((162,0,1442,720))
         pics.save(path)
+
+    if command[0]=='testAuto':
+        if len(command)==1:
+            print("random test")
+            a=rand.choice(datas['imglist'])
+            da=datas['data'][a[0]]
+            print(f"info: data={da},imglist={a}")
+            path=os.path.join('img',a[0]+'.'+da[0])
+            pic=img.open(path)
+            if da[0]=='gif':
+                print('gif format. auto set uncapitalized')
+            elif da[0]=='jpg':
+                print('jpg format. auto set capitalized')
+            elif pic.size==(1280,720):
+                print('1280x720. auto set capitalized')
+            elif pic.size==(1920,1080):
+                print('1920x1080. auto set uncapitalized')
+            elif pic.height/pic.width!=9/16:
+                print('not 16:9. auto set uncapitalized')
+            else:
+                print('cannot auto set.')
+        else:
+            for i in command[1:]:
+                if i not in datas['data']:
+                    print('img not found!')
+                    break
+                ii:list
+                for j in datas['imglist']:
+                    if j[0]==i:
+                        ii=j
+                        break
+                di=datas['data'][i]
+                print(f"info: data={di},imglist={ii}")
+                path=os.path.join('img',ii[0]+'.'+di[0])
+                pic=img.open(path)
+                if di[0]=='gif':
+                    print('gif format. auto set uncapitalized')
+                elif di[0]=='jpg':
+                    print('jpg format. auto set capitalized')
+                elif pic.size==(1280,720):
+                    print('1280x720. auto set capitalized')
+                elif pic.size==(1920,1080):
+                    print('1920x1080. auto set uncapitalized')
+                elif pic.height/pic.width!=9/16:
+                    print('not 16:9. auto set uncapitalized')
+                else:
+                    print('cannot auto set.')
 
 #    if command[0]=='list':
 #        if len(command)!=2:
