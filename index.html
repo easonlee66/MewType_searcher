@@ -91,6 +91,14 @@
                 <input type="checkbox" id="other_c" name="character" value="other_c"/>
                 <label for="other_c" onclick="change_checkbox('other_c')" class="pointer_text">其他</label>
                 <br/>
+                <span id="including" onclick="turn_mode()" class="pointer_text">图片形式</span>
+                <input type="checkbox" id="png" name="character" value="png"/>
+                <label for="png" onclick="change_checkbox('png')" class="pointer_text">无字幕静图</label>
+                <input type="checkbox" id="jpg" name="character" value="jpg"/>
+                <label for="jpg" onclick="change_checkbox('jpg')" class="pointer_text">有字幕静图</label>
+                <input type="checkbox" id="gif" name="character" value="gif"/>
+                <label for="gif" onclick="change_checkbox('gif')" class="pointer_text">动图</label>
+                <br/>
                 <button id="submit" onclick="process_new()" class="block">筛选</button>
                 <!--<button onclick="selfcheck()" class="block">测试用按钮</button>-->
             </div>
