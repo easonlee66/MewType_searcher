@@ -47,10 +47,8 @@ function inits(gotdata){
     for(let i of imglist){
         let name=i[0];
         selected_img.push(name);
-//        result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
     }
     show_images()
-//    show.innerHTML=result_string;
 }
 function process_new(){
     selected_img=new Array();
@@ -107,13 +105,11 @@ function process_new(){
             if(modes){
                 if((arl&&newdata[name][2].includes('arl'))||(nnk&&newdata[name][2].includes('nnk'))||(ritsu&&newdata[name][2].includes('ritsu'))||(myk&&newdata[name][2].includes('myk'))||(yuno&&newdata[name][2].includes('yuno'))||(viola&&newdata[name][2].includes('viola'))||(other&&newdata[name][2].includes('other'))){
                     temp_selected.push(name);
-//                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
                 }
             }
             else{
                 if(!((arl&&!newdata[name][2].includes('arl'))||(nnk&&!newdata[name][2].includes('nnk'))||(ritsu&&!newdata[name][2].includes('ritsu'))||(myk&&!newdata[name][2].includes('myk'))||(yuno&&!newdata[name][2].includes('yuno'))||(viola&&!newdata[name][2].includes('viola'))||(other&&!newdata[name][2].includes('other')))){
                     temp_selected.push(name);
-//                    result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
                 }
             }
         }
@@ -122,7 +118,6 @@ function process_new(){
         for(let i=start;i<end;i++){
             let name=imglist[i][0];
             temp_selected.push(name);
-//            result_string+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
         }
     }
     if(jpg||png||gif){
@@ -136,7 +131,6 @@ function process_new(){
         selected_img=temp_selected;
     }
     show_images()
-//    show.innerHTML=result_string;
 }
 function jsonTest(){
     const show=document.getElementById("result");
