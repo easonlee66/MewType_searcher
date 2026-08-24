@@ -32,7 +32,7 @@ with open("todolist.txt",mode='r',encoding='utf-8') as f:
     #第八集5:8,11:7,16:5,第九集10:21,12:56\n1:56,2:35,5:55,6:33,10:19,16:37,16:41,17:44,19:12,19:23,20:18,20:30,21:36,21:54,第九集开头阿拉蕾,0:44,3:24,myk sound only,5:24,6:11,7:23,都子倒在楼梯上,14:37,19:55\n走过路过不要错过,15:40左右炎上评论")
     todolist=f.readlines()
     for i in todolist:
-        print(i)
+        print(i[:-1])
 
 while True:
     command=input()
