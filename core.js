@@ -80,6 +80,7 @@ function inits(gotdata){
         let name=i[0];
         selected_img.push(name);
     }
+    start_show=0;
     end_show=step_show;
     if(end_show>selected_img.length){
         end_show=selected_img.length;
@@ -166,6 +167,7 @@ function process_new(){
     else{
         selected_img=temp_selected;
     }
+    start_show=0;
     end_show=step_show;
     if(end_show>selected_img.length){
         end_show=selected_img.length;
