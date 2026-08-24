@@ -48,6 +48,7 @@ function next_page(){
             end_show=selected_img.length;
         }
     }
+    show_images()
 }
 function former_page(){
     if(start_show<=0){
@@ -60,6 +61,7 @@ function former_page(){
             start_show=0;
         }
     }
+    show_images()
 }
 
 function initf(jqxhr,textStatus,err){
@@ -78,7 +80,10 @@ function inits(gotdata){
         let name=i[0];
         selected_img.push(name);
     }
-    end_show=selected_img.length;
+    end_show=step_show;
+    if(end_show>selected_img.length){
+        end_show=selected_img.length;
+    }
     show_images()
 }
 function process_new(){
@@ -161,7 +166,10 @@ function process_new(){
     else{
         selected_img=temp_selected;
     }
-    end_show=selected_img.length;
+    end_show=step_show;
+    if(end_show>selected_img.length){
+        end_show=selected_img.length;
+    }
     show_images()
 }
 function jsonTest(){
