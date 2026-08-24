@@ -9,6 +9,10 @@ var split;
 
 var selected_img=new Array();
 
+var start_show=0;
+var end_show=0;
+const step_show=20;
+
 function turn_mode(){
     const text_i=document.getElementById("including");
     if(text_i.innerHTML=="角色（包含任意）"){
@@ -26,10 +30,36 @@ function change_checkbox(target_id){
 function show_images(){
     var result="";
     const show=document.getElementById("show_image");
-    for(let name of selected_img){
+    for(let i=start_show;i<end_show;i++){
+        let name=selected_img[i];
         result+=("<img src=\"img/"+name+'.'+newdata[name][0]+"\" alt=\""+newdata[name][1]+"\" title=\""+newdata[name][1]+"\"  style=\"width:"+newdata[name][3]+"px;height:"+newdata[name][4]+"px\"/>");
     }
     show.innerHTML=result;
+}
+
+function next_page(){
+    if(end_show>=selected_img.length){
+        alert("已经到底了");
+    }
+    else{
+        start_show+=step_show;
+        end_show+=step_show;
+        if(end_show>selected_img.length){
+            end_show=selected_img.length;
+        }
+    }
+}
+function former_page(){
+    if(start_show<=0){
+        alert("已经到顶了");
+    }
+    else{
+        start_show-=step_show;
+        end_show=start_show+step_show;
+        if(start_show<0){
+            start_show=0;
+        }
+    }
 }
 
 function initf(jqxhr,textStatus,err){
@@ -48,6 +78,7 @@ function inits(gotdata){
         let name=i[0];
         selected_img.push(name);
     }
+    end_show=selected_img.length;
     show_images()
 }
 function process_new(){
@@ -130,6 +161,7 @@ function process_new(){
     else{
         selected_img=temp_selected;
     }
+    end_show=selected_img.length;
     show_images()
 }
 function jsonTest(){
