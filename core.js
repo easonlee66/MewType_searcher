@@ -124,6 +124,10 @@ function process_new(){
     }
     else if(document.getElementById('e_9').selected){
         start=split.i;
+        end=split.j;
+    }
+    else if(document.getElementById('e_10').selected){
+        start=split.j;
         end=split.n;
     }
     else if(document.getElementById("e_other").selected){
@@ -173,16 +177,6 @@ function process_new(){
         end_show=selected_img.length;
     }
     show_images()
-}
-function jsonTest(){
-    const show=document.getElementById("result");
-    $.getJSON('data.json', function(data) {
-        console.log(data);
-        show.innerHTML=data.toString();
-    }).fail(function(jqxhr, textStatus, error) {
-        let err = textStatus + ', ' + error;
-        console.error('Request Failed: ' + err);
-    });
 }
 
 //function showSearch(){}
