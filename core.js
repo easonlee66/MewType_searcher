@@ -203,7 +203,12 @@ function process_new(){
 function show_search_texbox(){
     change_checkbox('jpg');
     const search_dev=document.getElementById('div_below_imgcheck');
-    search_dev.innerHTML='<textarea rows="1" cols="60" id="img_search"></textarea>';
+    if(search_dev.innerHTML==''){
+        search_dev.innerHTML='<textarea rows="1" cols="60" id="img_search"></textarea>';
+    }
+    else{
+        search_dev.innerHTML='';
+    }
 }
 
 //function showSearch(){}
