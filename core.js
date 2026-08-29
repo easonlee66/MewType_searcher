@@ -128,6 +128,10 @@ function process_new(){
     }
     else if(document.getElementById('e_10').selected){
         start=split.j;
+        end=split.k;
+    }
+    else if(document.getElementById('e_11').selected){
+        start=split.k;
         end=split.n;
     }
     else if(document.getElementById("e_other").selected){
