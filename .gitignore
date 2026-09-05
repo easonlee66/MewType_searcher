@@ -7,7 +7,7 @@ jekyll_test/*
 calculator.exe
 calculator.cpp
 cache
-temporarytool.cpp
-temporarytool.exe
+temporarytool.*
 command_cache
 todolist.txt
+img_cache/*
