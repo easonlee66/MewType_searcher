@@ -107,6 +107,27 @@ while True:
     characterlist=result_list[2]
     has_wrong=False
     for i in characterlist:
+        if i =="a":
+            i='arl'
+        elif i=='v':
+            i='viola'
+        elif i=='m':
+            i='myk'
+        elif i=='y':
+            i='yuno'
+        elif i=='n':
+            i='nnk'
+        elif i=='r':
+            i='ritsu'
+        elif i=='o':
+            i='other'
+        elif i=='MewType' or i=='mewtype' or i=='mew':
+            i='arl'
+            characterlist.append('myk')
+            characterlist.append('nnk')
+            characterlist.append('yuno')
+            characterlist.append('ritsu')
+    for i in characterlist:
         if not i in valid_input:
             has_wrong=True
             break

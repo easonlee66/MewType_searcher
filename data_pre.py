@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import json as js
-import os
+#import os
 
 data:dict
 imglist:list
@@ -53,6 +53,29 @@ with open('command_cache',encoding='utf-8',mode='a') as command_cache:
             print(f"wrong input:episode information need number 0-60(got {commands[3]})")
             continue
         has_wrong=False
+        characterlist=commands[4:]
+        for i in characterlist:
+            if i =="a":
+                i='arl'
+            elif i=='v':
+                i='viola'
+            elif i=='m':
+                i='myk'
+            elif i=='y':
+                i='yuno'
+            elif i=='n':
+                i='nnk'
+            elif i=='r':
+                i='ritsu'
+            elif i=='o':
+                i='other'
+            elif i=='MewType' or i=='mewtype' or i=='mew':
+                i='arl'
+                characterlist.append('myk')
+                characterlist.append('nnk')
+                characterlist.append('yuno')
+                characterlist.append('ritsu')
+        commands=commands[0:4]+characterlist
         for i in commands[4:]:
             if i not in valid_input:
                 has_wrong=True
