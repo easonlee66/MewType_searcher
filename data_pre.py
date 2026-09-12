@@ -54,23 +54,23 @@ with open('command_cache',encoding='utf-8',mode='a') as command_cache:
             continue
         has_wrong=False
         characterlist=commands[4:]
-        for i in characterlist:
-            if i =="a":
-                i='arl'
-            elif i=='v':
-                i='viola'
-            elif i=='m':
-                i='myk'
-            elif i=='y':
-                i='yuno'
-            elif i=='n':
-                i='nnk'
-            elif i=='r':
-                i='ritsu'
-            elif i=='o':
-                i='other'
-            elif i=='MewType' or i=='mewtype' or i=='mew':
-                i='arl'
+        for i in range(len(characterlist)):
+            if characterlist[i] =="a":
+                characterlist[i]='arl'
+            elif characterlist[i]=='v':
+                characterlist[i]='viola'
+            elif characterlist[i]=='m':
+                characterlist[i]='myk'
+            elif characterlist[i]=='y':
+                characterlist[i]='yuno'
+            elif characterlist[i]=='n':
+                characterlist[i]='nnk'
+            elif characterlist[i]=='r':
+                characterlist[i]='ritsu'
+            elif characterlist[i]=='o':
+                characterlist[i]='other'
+            elif characterlist[i]=='MewType' or characterlist[i]=='mewtype' or characterlist[i]=='mew':
+                characterlist[i]='arl'
                 characterlist.append('myk')
                 characterlist.append('nnk')
                 characterlist.append('yuno')
@@ -81,7 +81,7 @@ with open('command_cache',encoding='utf-8',mode='a') as command_cache:
                 has_wrong=True
                 break
         if has_wrong:
-            print(f"input error:character has unexpected data!(expect{valid_input})")
+            print(f"input error:character has unexpected data!(expect{valid_input},got{characterlist})")
             continue
         command_cache.write(command+'\n')
 # check end
