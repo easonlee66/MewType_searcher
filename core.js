@@ -136,6 +136,10 @@ function process_new(){
     }
     else if(document.getElementById('e_12').selected){
         start=split.l;
+        end=split.m;
+    }
+    else if(document.getElementById('e_13').selected){
+        start=split.m;
         end=split.n;
     }
     else if(document.getElementById("e_other").selected){
