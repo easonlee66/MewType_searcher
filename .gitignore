@@ -11,3 +11,5 @@ temporarytool.*
 command_cache
 todolist.txt
 img_cache/*
+data_pre.py
+data_pre_massive.py
